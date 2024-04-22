@@ -1,0 +1,58 @@
+@media screen and (max-width: 768px){/*Celulares*/
+    .rodape{
+    font-size: 10vw;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px){/*Tablets*/
+    .rodape{
+    font-size: 10vw;
+    }
+}
+
+@media screen and (min-width: 1024px){/*Computadores*/
+    .rodape{
+    font-size: 10vh;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e1dbdb;
+}
+  
+.container {
+    display: flex; /* Torna o container flexível */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    height: 85vh; /* Altura do container */
+}
+
+.rodape{
+    display: flex; /* Torna o container flexível */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    height: 10vh; /* Altura do container */
+}
+
+  #tipoTicket {
+    background-image: linear-gradient(to bottom right, #008e88,#009993,#0d426a);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 3vw;
+    margin: 3vw;
+    font-size: 5vw;
+  }
+
+#tipoTicket:hover{
+    background-image: linear-gradient(to bottom right, #FFC300,#FFC300,#FFC300);
+    color: black;
+    transform: scale(1.1);
+    
+}
+#tipoTicket:active{
+    transform: scale(0.80);
+}

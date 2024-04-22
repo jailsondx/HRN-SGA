@@ -1,0 +1,61 @@
+
+
+[18-04-2024 16-59-21]
+IP: ::1
+Ticket Tipo: Acompanhante-38
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 16-59-21]
+IP: ::1
+Ticket Tipo: Visitante-22
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 16-59-22]
+IP: ::1
+Ticket Tipo: Acompanhante-39
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 16-59-22]
+IP: ::1
+Ticket Tipo: Acompanhante-40
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 16-59-23]
+IP: ::1
+Ticket Tipo: Visitante-23
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 16-59-23]
+IP: ::1
+Ticket Tipo: Visitante-24
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 16-59-23]
+IP: ::1
+Ticket Tipo: Visitante-25
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 16-59-24]
+IP: ::1
+Ticket Tipo: Visitante-26
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 17-53-59]
+IP: ::1
+Ticket Tipo: Acompanhante-41
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 17-54-00]
+IP: ::1
+Ticket Tipo: Acompanhante-42
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 17-54-00]
+IP: ::1
+Ticket Tipo: Acompanhante-43
+Operação: Novo registro inserido com sucesso!
+
+[18-04-2024 17-54-00]
+IP: ::1
+Ticket Tipo: Acompanhante-44
+Operação: Novo registro inserido com sucesso!
