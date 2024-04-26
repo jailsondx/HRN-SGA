@@ -15,21 +15,23 @@ function obterTicketsGerados($conn) {
    }
 
    // Consulta SQL para selecionar os resultados da tabela 'ticket' com estado 'GERADO'
-   $sql = "SELECT * FROM tickets WHERE estado = 'GERADO' ORDER BY id LIMIT 20";
+   $sql = "SELECT * FROM tickets WHERE estado = 'ATENDIMENTO' ORDER BY dia DESC LIMIT 5";
    $resultado = $conn->query($sql);
 
    // Verificar se há resultados
    if ($resultado->num_rows > 0) {
        // Iniciar a saída HTML
-       $html = "<ul>";
+        $html = "<table>";
 
        // Iterar sobre os resultados e adicionar cada um à saída HTML
        while ($row = $resultado->fetch_assoc()) {
-           $html .= "<li>" . $row["tipo"] . "-" . $row["numero"] . "</li>";
+            $html .= "<tr>";
+            $html .= "<td>" . $row["tipo"] . "-" . $row["numero"] . "</td>";
+            $html .= "</tr>";
        }
 
        // Fechar a lista UL
-       $html .= "</ul>";
+       $html .= "</table>";
    } else {
        $html = "Nenhum resultado encontrado.";
    }

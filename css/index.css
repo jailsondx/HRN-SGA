@@ -1,3 +1,20 @@
+/*
+    justify-content: center;  Alinha os itens horizontalmente ao centro 
+    align-items: center;  Alinha os itens verticalmente ao centro 
+    text-align: center;  Alinha o texto horizontalmente 
+*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../font/poppins/Poppins-Regular.ttf') format('truetype');
+  
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../font/poppins/Poppins-Bold.ttf') format('truetype');
+  }
+
 @media screen and (max-width: 768px){/*Celulares*/
     .rodape{
     font-size: 2rem;
@@ -5,6 +22,13 @@
     .left-column{
         font-size: 1.5rem;
     }
+    .right-column{
+        font-size: 1rem;
+        padding: 10vw;
+    }
+    table, th, td {
+        padding: 3vh;
+      }
     #ticketChamado{
         font-size: 2.3rem;
     }
@@ -12,34 +36,56 @@
 
 @media screen and (min-width: 767px) and (max-width: 1023px){/*Tablets*/
     .rodape{
-    font-size: 2.5rem;
+    font-size: 2rem;
     }
-    .container{
-        height: 20vw;
-    }
+
     .left-column{
         font-size: 2rem;
     }
+    .right-column{
+        font-size: 0.8rem;
+    }
+    th, td {
+        padding: 3vh;
+      }
     #ticketChamado{
-        font-size: 1rem;
+        font-size: 3rem;
     }
 }
 
 @media screen and (min-width: 1024px){/*Computadores*/
     .rodape{
-    font-size: 4rem;
+    font-size: 3rem;
     }
     .left-column{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
+    .right-column{
+        font-size: 1rem;
+    }
+    th, td {
+        padding: 4vh;
+      }
     #ticketChamado{
-        font-size: 6rem;
+        font-size: 5rem;
     }
 }
 
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins-Regular, Arial, sans-serif; /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
     margin: 0;
     padding: 0;
     background-color: #e1dbdb;
@@ -47,12 +93,8 @@ body {
 
 .container {
     display: flex; /* Torna o container flexível */
-    justify-content: center; /* Alinha os itens horizontalmente ao centro */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    text-align: center; /* Alinha o texto horizontalmente */
     height: 85vh; /* Altura do container */
     width: 100vw;
-    border-radius: 300px;
 }
 
 .left-column { /*Centralizações H e V*/
@@ -64,12 +106,15 @@ body {
 }
 
 .left-column {
-    flex: 3; /* Ajusta a proporção da coluna da esquerda */
+    position: relative; /* Estabelece um contexto para a pseudoclasse ::before */
+    flex: 3;
     background-color: #f0f0f0;
     padding: 20px;
-    height: 85vh;
-    border-top-left-radius: 5rem;
-    border-bottom-left-radius: 5rem;
+    
+    border-left: 3rem solid;
+    border-radius: 5rem 0 0 5rem;
+    border-color: #0d6a5e;
+    
 }
 
 .right-column {
@@ -79,12 +124,28 @@ body {
     height: 85vh;
 }
 
+table{
+    background-color: green;
+    border: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;  /*Alinha os itens horizontalmente ao centro*/
+}
+th, td {
+    background-color: #f0f0f0;
+    margin: 200px;
+    border: 200px;
+    justify-content: center;  /*Alinha os itens horizontalmente ao centro*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
 .rodape{
+    background-color: #f0f0f0;
     display: flex; /* Torna o container flexível */
     flex-wrap: wrap;
     justify-content: center; /* Alinha os itens horizontalmente ao centro */
     align-items: center; /* Alinha os itens verticalmente ao centro */
-    height: 15vh; /* Altura do container */
+    margin-top: 1vh;
+    height: 12vh; /* Altura do container */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-
-  
