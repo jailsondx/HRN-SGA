@@ -1,44 +1,120 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../font/poppins/Poppins-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../font/poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+
 body {
-    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    font-family: Poppins-Regular, Arial, sans-serif; /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
     margin: 0;
     padding: 0;
+  }
+
+  tabel, tr, td{
+    border: 0px solid;
+    text-align: left;
+  }
+
+  #td-ico{
+    text-align: center /*Alinha os textos ao centro horizontalmente*/;
+    width: 50%;
   }
   
   .container {
     display: flex;
-
     height: 100vh;
+    width: 100vw;
   }
   
   .left-column {
-    text-align: center;
+    flex: 3;
+    margin: 20px;
+  }
 
-    flex: 3; /* Ajusta a proporção da coluna da esquerda */
-    background-color: #f0f0f0;
-    padding: 20px;
+  .quadro-infor-tickets{
+    display: flex;
+    flex-direction: column;
+    text-align: center /*Alinha os textos ao centro horizontalmente*/;
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin: 10px;
+    height: 60vh;
+    border-radius: 2rem 2rem 2rem 2rem;
+    border-top: 2vh solid;
+    border-color: #009993;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .estatisticas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin: 10px;
+    height: 30vh;
+    border-radius: 2rem 2rem 2rem 2rem;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .quadros{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+  }
+
+  #Q01, #Q02, #Q03{
+    font-size: 0.8rem;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin: 1vw;
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #icons-estatisticas{
+    max-width: 50%; /* Largura máxima igual à largura do contêiner */
+    max-height: 50%; /* Altura máxima igual à altura do contêiner */
   }
   
   .right-column {
-    flex: 1; /* Ajusta a proporção da coluna da direita */
-    background-color: #ccc;
+    width: 20vw;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
-  }
-  
-  .square-container {
-    display: flex;
-    align-self: center;
-  }
-  
-  .square {
-    width: 100px;
-    height: 100px;
-    background-color: #007bff;
-    margin-right: 20px;
   }
   
 
   #ticketInfo{
-    font-size: 5vw;
-    background-color: aquamarine;
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
+    font-size: 3vw;
+    height: 5vw;
+    margin: 3vw;
+    margin-top: 4vw;
+  }
+
+.botoes{
+  -ms-flex-align: end;
+}
+
+  .btn{
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-top: -1rem;
   }
   

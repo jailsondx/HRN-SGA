@@ -1,5 +1,7 @@
 <?php
-include_once 'conexaoDB.php';
+
+require_once 'conexaoDB.php';
+require_once 'geraLog.php';
 
 require_once '../plugins/vendor/autoload.php'; // Inclua o autoload do Composer
 
@@ -8,8 +10,11 @@ use Mike42\Escpos\PrintConnectors\NetworkPrintConnector; //Realizar impressão e
 use Mike42\Escpos\Printer; //Função de comandos para impressão
 use Mike42\Escpos\EscposImage;
 
+// DEFINE O FUSO HORARIO COMO O HORARIO DE BRASILIA
+date_default_timezone_set('America/Fortaleza');
 
-// Verifica qual botão foi clicado recebdno via FORM
+
+// Verifica qual botão foi clicado recebendo via FORM da pagina cliente.html
 if (isset($_POST['tipoTicket'])) {
     $tipoTicketParamentro = $_POST['tipoTicket'];
     // Chama a função correspondente
@@ -30,15 +35,13 @@ if (isset($_POST['tipoTicket'])) {
 
 
 
-
-
 function geraTicket($conn, $tipo){
         // Consulta SQL para obter o último valor da coluna "numero"
         $sql = "SELECT MAX(numero) AS ultimo_numero FROM tickets WHERE tipo = '$tipo'";
         $result = $conn->query($sql);
 
         $estado = 'GERADO';
-        $data = date("d-m-Y");
+        $data = date("d-m-Y H:i:s");
 
 
     // Verifica se a consulta retornou algum resultado
@@ -54,7 +57,7 @@ function geraTicket($conn, $tipo){
             // Insere o novo registro com o próximo número na tabela
             $sql_insert = "INSERT INTO tickets (tipo, numero, estado, dia) VALUES ('$tipo', '$proximo_numero', '$estado', '$data')";
             if ($conn->query($sql_insert) === TRUE) {
-                $operacao = "Novo registro inserido com sucesso!";
+                $operacao = "Ticket Gerado, Novo registro inserido com sucesso!";
                 geraLog($tipo, $numero, $operacao);
             } else {
                 $operacao = "Erro ao inserir novo registro: " . $conn->error;
@@ -67,7 +70,7 @@ function geraTicket($conn, $tipo){
             // Insere o primeiro registro na tabela
             $sql_insert_primeiro = "INSERT INTO tickets (tipo, numero, estado, dia) VALUES ('$tipo', '$proximo_numero', '$estado', '$data')";
             if ($conn->query($sql_insert_primeiro) === TRUE) {
-                $operacao = "Primeiro registro inserido com sucesso!";
+                $operacao = "Primeor Ticket Gerado, Primeiro registro inserido com sucesso!";
                 geraLog($tipo, $numero, $operacao);
             } else {
                 $operacao = "Erro ao inserir primeiro registro: " . $conn->error;
@@ -77,7 +80,7 @@ function geraTicket($conn, $tipo){
 
     // Fecha a conexão com o banco de dados
     $conn->close();
-    imprimirTermica($tipo, $numero);
+    //imprimirTermica($tipo, $numero);
     //visualizar($tipo, $numero);
     header("Location: ../cliente.html");
 }
@@ -175,6 +178,10 @@ function imprimirTermica($tipo, $numero){
     // Feche a conexão com a impressora
     $printer->close();
 
+    //Gera Log de Impressão
+    $operacao = "Impressão do ticket ".$tipo."-".$numero." com sucesso!";
+    geraLog($tipo, $numero, $operacao);
+
 }
 
 function visualizar($tipo, $numero){
@@ -208,76 +215,5 @@ function visualizar($tipo, $numero){
     unlink($tempFilePath);
 }
 
-
-function buscarAcompanhanteEAtualizarEstado($conn) {
-    // Query SQL para buscar o acompanhante com o estado 'GERADO'
-    $sql = "SELECT id FROM tickets WHERE estado = 'GERADO' ORDER BY id ASC LIMIT 1";
-    $result = $conn->query($sql);
-    
-    // Verifique se há resultados
-    if ($result->num_rows > 0) {
-        // Retorne o primeiro ID encontrado
-        $row = $result->fetch_assoc();
-        $id_ticket = $row['id'];
-
-        echo "ID do ticket que será atualizado para 'ATENDIMENTO': $id_ticket";
-        
-        // Query SQL para atualizar o estado do registro com o ID encontrado
-        $sql_update = "UPDATE tickets SET estado = 'ATENDIMENTO' WHERE id = $id_ticket";
-        
-        // Execute a query SQL de atualização
-        if ($conn->query($sql_update) === TRUE) {
-            // Envie uma resposta de sucesso com o ID do acompanhante
-            echo json_encode(array('id_ticket' => $id_ticket));
-        } else {
-            // Envie uma resposta de erro se houver um problema ao atualizar o estado
-            echo json_encode(array('error' => 'Erro ao atualizar o estado do registro no banco de dados: ' . $conn->error));
-        }
-    } else {
-        // Se não houver acompanhantes com estado 'GERADO', envie uma resposta indicando que não há acompanhantes disponíveis
-        echo json_encode(array('id_ticket' => null, 'message' => 'Não há acompanhantes disponíveis.'));
-    }
-    
-    // Feche a conexão com o banco de dados
-    $conn->close();
-}
-
-
-function geraLog($tipoTicket, $numero, $operacao){
-     //função que escreve os tickets em txt
-     //Cria o log; se der erro na pasta dar acesso chmod 777
-     $hoje = date("d-m-Y");
-     $data = date("d-m-Y H-i-s");
-     $ip = getIp();
-
-     $msg = "\n\n[".$data."]\nIP: " . $ip . "\nTicket Tipo: " . $tipoTicket . "-" . $numero . "\nOperação: " . $operacao;
-     $fp = fopen("../Tickets/Tickets_Logs ".$hoje.".txt",'a+'); 
-     fwrite($fp,$msg); 
-     fclose($fp);
-}
-
-//função que pega o IP do computador
-function getIp() {
-
-    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-        $ip = $_SERVER['HTTP_CLIENT_IP'];
-
-    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-
-    } else {
-        $ip = $_SERVER['REMOTE_ADDR'];
-    }
-
-    return $ip;
-}
-
-
-function title(Printer $printer, $text)
-{
-    $printer -> selectPrintMode(Printer::MODE_EMPHASIZED);
-    $printer -> text("\n" . $text);
-    $printer -> selectPrintMode(); // Reset
-}
 
 ?>

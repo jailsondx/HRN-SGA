@@ -1,18 +1,18 @@
 @media screen and (max-width: 768px){/*Celulares*/
     .rodape{
-    font-size: 10vw;
+    font-size: 7vw;
     }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px){/*Tablets*/
     .rodape{
-    font-size: 10vw;
+    font-size: 7vw;
     }
 }
 
 @media screen and (min-width: 1024px){/*Computadores*/
     .rodape{
-    font-size: 10vh;
+    font-size: 7vh;
     }
 }
 

@@ -1,5 +1,10 @@
 <?php
-include_once 'conexaoDB.php';
+
+require_once 'conexaoDB.php';
+require_once 'geraLog.php';
+
+// DEFINE O FUSO HORARIO COMO O HORARIO DE BRASILIA
+date_default_timezone_set('America/Fortaleza');
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
@@ -22,6 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
 
 // Função para buscar o acompanhante e atualizar o estado do registro
 function buscarTicketEAtualizarEstado($conn, $tipoTicketChamado) {
+
+    $data = date("d-m-Y H:i:s");
     // Query SQL para buscar o acompanhante com o estado 'GERADO'
     $sql = "SELECT * FROM tickets WHERE estado = 'GERADO' AND tipo='$tipoTicketChamado' ORDER BY id ASC LIMIT 1";
     $result = $conn->query($sql);
@@ -36,17 +43,25 @@ function buscarTicketEAtualizarEstado($conn, $tipoTicketChamado) {
         
         // Query SQL para atualizar o estado do registro com o ID encontrado
         $sql_update = "UPDATE tickets SET estado = 'ATENDIMENTO' WHERE id = $id_ticket";
+        $sql_update_atual = "UPDATE atual SET tipo='$tipo_ticket', numero='$numero_ticket' WHERE id = 1";
+
 
         // Armazene o valor onde você preferir, como um arquivo de texto ou um banco de dados
-        escreverArquivoTxt($tipo_ticket, $numero_ticket);
+        //escreverArquivoTxt($tipo_ticket, $numero_ticket);
         
         // Execute a query SQL de atualização
-        if ($conn->query($sql_update) === TRUE) {
+        if (($conn->query($sql_update) === TRUE) && ($conn->query($sql_update_atual) === TRUE)) {
             // Envie uma resposta de sucesso 
             echo json_encode($tipo_ticket . "-" . $numero_ticket);
+                //Gera Log da Chamada
+                $operacao = "Chamado com sucesso!";
+                geraLog($tipo_ticket, $numero_ticket, $operacao);
         } else {
             // Envie uma resposta de erro se houver um problema ao atualizar o estado
-            echo json_encode(array('error' => 'Erro ao atualizar o estado do registro no banco de dados: ' . $conn->error));
+            echo json_encode(array('error' => 'Erro ao atualizar o estado do registro no banco de dados (function buscarTicketEAtualizarEstado): ' . $conn->error));
+                //Gera Log da Chamada
+                $operacao = json_encode(array('error' => 'Erro ao atualizar o estado do registro no banco de dados (function buscarTicketEAtualizarEstado): ' . $conn->error));
+                geraLog($tipo_ticket, $numero_ticket, $operacao);
         }
     } else {
         // Se não houver acompanhantes com estado 'GERADO', envie uma resposta indicando que não há acompanhantes disponíveis
@@ -55,18 +70,6 @@ function buscarTicketEAtualizarEstado($conn, $tipoTicketChamado) {
     
     // Feche a conexão com o banco de dados
     $conn->close();
-}
-
-function escreverArquivoTxt($tipo_ticket, $numero_ticket) {
-    $conteudo = $tipo_ticket . "-" . $numero_ticket;
-    $nome_arquivo = '../Tickets/dados.txt'; // Nome do arquivo onde os dados serão armazenados
-
-    // Escreve o conteúdo no arquivo, sobrescrevendo qualquer conteúdo anterior
-    if (file_put_contents($nome_arquivo, $conteudo) !== false) {
-        echo "<script>console.log('Conteúdo escrito no arquivo com sucesso!');</script>";
-    } else {
-        echo "Erro ao escrever no arquivo!";
-    }
 }
 
 ?>
