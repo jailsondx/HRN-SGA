@@ -43,6 +43,4 @@ function obterTicketsGerados($conn) {
    return $html;
 }
 
-
-
 ?>

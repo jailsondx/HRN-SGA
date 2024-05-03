@@ -14,11 +14,10 @@ use Mike42\Escpos\EscposImage;
 date_default_timezone_set('America/Fortaleza');
 
 
-// Verifica qual botão foi clicado recebendo via FORM da pagina cliente.html
-if (isset($_POST['tipoTicket'])) {
-    $tipoTicketParamentro = $_POST['tipoTicket'];
-    // Chama a função correspondente
-    switch ($tipoTicketParamentro) {
+
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
+    switch ($_POST['action']) {
         case 'A':
             $tipo = 'Acompanhante';
             geraTicket($conn, $tipo);
@@ -27,11 +26,26 @@ if (isset($_POST['tipoTicket'])) {
             $tipo = 'Visitante';
             geraTicket($conn, $tipo);
             break;
-        default:
-            echo "Função não encontrada!";
+        case 'AP':
+            $tipo = 'Atendimento Prioritario';
+            geraTicket($conn, $tipo);
             break;
+        case 'VA':
+            $tipo = 'Visita Administrativa';
+            geraTicket($conn, $tipo);
+            break;
+        case 'CE':
+            $tipo = 'Credencial Esquecida';
+            geraTicket($conn, $tipo);
+            break;
+        default:
+            // Responda com um erro se a ação não for reconhecida
+            http_response_code(400); // Bad Request
+            echo 'Ação desconhecida!';
+            exit;
     }
 }
+
 
 
 
@@ -51,11 +65,10 @@ function geraTicket($conn, $tipo){
             $ultimo_numero = $row["ultimo_numero"];
 
             // Incrementa o último número para obter o próximo número
-            $proximo_numero = $ultimo_numero + 1;
-            $numero = $proximo_numero;
+            $numero = $ultimo_numero + 1;
 
             // Insere o novo registro com o próximo número na tabela
-            $sql_insert = "INSERT INTO tickets (tipo, numero, estado, dia) VALUES ('$tipo', '$proximo_numero', '$estado', '$data')";
+            $sql_insert = "INSERT INTO tickets (tipo, numero, estado, dia) VALUES ('$tipo', '$numero', '$estado', '$data')";
             if ($conn->query($sql_insert) === TRUE) {
                 $operacao = "Ticket Gerado, Novo registro inserido com sucesso!";
                 geraLog($tipo, $numero, $operacao);
@@ -65,10 +78,9 @@ function geraTicket($conn, $tipo){
             }
         } else {
             // Se não houver registros na tabela, define o próximo número como 1
-            $proximo_numero = 1;
-            $numero = $proximo_numero;
+            $numero = 1;
             // Insere o primeiro registro na tabela
-            $sql_insert_primeiro = "INSERT INTO tickets (tipo, numero, estado, dia) VALUES ('$tipo', '$proximo_numero', '$estado', '$data')";
+            $sql_insert_primeiro = "INSERT INTO tickets (tipo, numero, estado, dia) VALUES ('$tipo', '$numero', '$estado', '$data')";
             if ($conn->query($sql_insert_primeiro) === TRUE) {
                 $operacao = "Primeor Ticket Gerado, Primeiro registro inserido com sucesso!";
                 geraLog($tipo, $numero, $operacao);
@@ -82,7 +94,7 @@ function geraTicket($conn, $tipo){
     $conn->close();
     //imprimirTermica($tipo, $numero);
     //visualizar($tipo, $numero);
-    header("Location: ../cliente.html");
+    //header("Location: ../cliente.html");
 }
 
 function imprimirZebra($tipo, $numero){

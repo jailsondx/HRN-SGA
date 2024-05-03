@@ -1,58 +1,109 @@
 @media screen and (max-width: 768px){/*Celulares*/
     .rodape{
-    font-size: 7vw;
+    font-size: 1.7rem;
+    }
+    .item1, .item1-2{
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px){/*Tablets*/
     .rodape{
-    font-size: 7vw;
+    font-size: 2rem;
     }
+    .item1, .item1-2{
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 1024px){/*Computadores*/
     .rodape{
-    font-size: 7vh;
+    font-size: 3rem;
+    }
+    .item1, .item1-2{
+        font-size: 3rem;
     }
 }
 
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../font/poppins/Poppins-Regular.ttf') format('truetype');
+  
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../font/poppins/Poppins-Bold.ttf') format('truetype');
+  }
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins-Bold, Arial, sans-serif; /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
     margin: 0;
     padding: 0;
     background-color: #e1dbdb;
 }
-  
+
+
 .container {
-    display: flex; /* Torna o container flexível */
+    display: flex;
+    flex-wrap: wrap;
+    height: 85vh; /* 100% da altura da viewport */
+    text-align: center /*Alinha os textos ao centro horizontalmente*/;
     justify-content: center; /* Alinha os itens horizontalmente ao centro */
     align-items: center; /* Alinha os itens verticalmente ao centro */
-    height: 85vh; /* Altura do container */
 }
 
-.rodape{
-    display: flex; /* Torna o container flexível */
-    justify-content: center; /* Alinha os itens horizontalmente ao centro */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    height: 10vh; /* Altura do container */
-}
-
-  #tipoTicket {
-    background-image: linear-gradient(to bottom right, #008e88,#009993,#0d426a);
-    border: none;
-    border-radius: 30px;
-    color: white;
-    padding: 3vw;
-    margin: 3vw;
-    font-size: 5vw;
+.break {
+    flex-basis: 100%;
+    height: 0;
   }
 
-#tipoTicket:hover{
+  .item1-2 {
+    align-items: end; /* Alinha os itens verticalmente ao centro */
+}
+
+.item1 {
+    align-items: top; /* Alinha os itens verticalmente ao centro */
+}
+
+.item1, .item1-2{
+    display: flex;
+    width: calc(90% / 2); /* Cada item ocupa metade da largura da tela */
+    height: 40vh; /* Cada item ocupa 1/3 da altura da tela */
+    text-align: center /*Alinha os textos ao centro horizontalmente*/;
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    margin: 1%;
+}
+
+  .tipoTicket {
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #008e88,#009993,#0d426a);
+    border-radius: 2rem;
+    color: white;
+  }
+  
+
+.tipoTicket:hover{
     background-image: linear-gradient(to bottom right, #FFC300,#FFC300,#FFC300);
     color: black;
     transform: scale(1.1);
     
 }
-#tipoTicket:active{
+.tipoTicket:active{
     transform: scale(0.80);
+}
+
+.rodape{
+    font-family: Poppins-Regular, Arial, sans-serif; /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
+    background-color: #f0f0f0;
+    display: flex; /* Torna o container flexível */
+    flex-wrap: wrap;
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-top: 1vh;
+    height: 12vh; /* Altura do container */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }

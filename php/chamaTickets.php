@@ -16,6 +16,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
         $tipoTicketChamado = 'VISITANTE';
         // Execute a função PHP aqui
         buscarTicketEAtualizarEstado($conn, $tipoTicketChamado);
+    } elseif ($_POST['action'] == 'btnExibeAtendimentoPrioritario') {
+        $tipoTicketChamado = 'ATENDIMENTO PRIORITARIO';
+        // Execute a função PHP aqui
+        buscarTicketEAtualizarEstado($conn, $tipoTicketChamado);
+    } elseif ($_POST['action'] == 'btnExibeOutros') {
+        $tipoTicketChamado = 'OUTROS';
+        // Execute a função PHP aqui
+        buscarTicketEAtualizarEstado($conn, $tipoTicketChamado);
+    } elseif ($_POST['action'] == 'btnExibeTicketEmOrdem') {
+        $tipoTicketChamado = 'ORDEM';
+        // Execute a função PHP aqui
+        buscarTicketEAtualizarEstado($conn, $tipoTicketChamado);
+    } elseif ($_POST['action'] == 'btnRepeteUltimo') {
+        $tipoTicketChamado = 'REPETIR';
+        // Execute a função PHP aqui
+        repeteTicket($conn, $tipoTicketChamado);
     } else {
         // Responda com um erro se a ação não for reconhecida
         http_response_code(400); // Bad Request
@@ -23,7 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
         exit;
     }
 }
-
 
 // Função para buscar o acompanhante e atualizar o estado do registro
 function buscarTicketEAtualizarEstado($conn, $tipoTicketChamado) {
@@ -42,7 +57,7 @@ function buscarTicketEAtualizarEstado($conn, $tipoTicketChamado) {
         $numero_ticket = $row['numero'];
         
         // Query SQL para atualizar o estado do registro com o ID encontrado
-        $sql_update = "UPDATE tickets SET estado = 'ATENDIMENTO' WHERE id = $id_ticket";
+        $sql_update = "UPDATE tickets SET estado = 'ATENDIMENTO', dia = '$data' WHERE id = $id_ticket";
         $sql_update_atual = "UPDATE atual SET tipo='$tipo_ticket', numero='$numero_ticket' WHERE id = 1";
 
 
@@ -70,6 +85,42 @@ function buscarTicketEAtualizarEstado($conn, $tipoTicketChamado) {
     
     // Feche a conexão com o banco de dados
     $conn->close();
+}
+
+function repeteTicket($conn, $tipoTicketChamado){
+    if ($tipoTicketChamado === 'REPETIR'){
+        $sql = "SELECT * FROM atual WHERE id = 1";
+        $result = $conn->query($sql);
+
+            // Verifique se há resultados
+            if ($result->num_rows > 0) {
+            // Retorne o primeiro ID encontrado
+            $row = $result->fetch_assoc();
+            $tipo_ticket = "." . $row['tipo'] . ".";
+            $numero_ticket = $row['numero'];
+
+            $sql_update_atual = "UPDATE atual SET tipo='$tipo_ticket', numero='$numero_ticket' WHERE id = 1";
+        
+        // Execute a query SQL de atualização
+        if ($conn->query($sql_update_atual) === TRUE) {
+            // Envie uma resposta de sucesso 
+            echo json_encode($tipo_ticket . " - " . $numero_ticket);
+                //Gera Log da Chamada
+                $operacao = "Chamado com sucesso!";
+                geraLog($tipo_ticket, $numero_ticket, $operacao);
+        } else {
+            // Envie uma resposta de erro se houver um problema ao atualizar o estado
+            echo json_encode(array('error' => 'Erro ao atualizar o estado do registro no banco de dados (function repeteTicket): ' . $conn->error));
+                //Gera Log da Chamada
+                $operacao = json_encode(array('error' => 'Erro ao atualizar o estado do registro no banco de dados (function repeteTicket): ' . $conn->error));
+                geraLog($tipo_ticket, $numero_ticket, $operacao);
+        }
+        }
+    } else {
+        echo ('Não há tickets do tipo');
+    }
+      // Feche a conexão com o banco de dados
+      $conn->close();
 }
 
 ?>

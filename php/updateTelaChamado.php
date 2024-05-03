@@ -4,9 +4,8 @@ include_once 'conexaoDB.php';
 // DEFINE O FUSO HORARIO COMO O HORARIO DE BRASILIA
 date_default_timezone_set('America/Fortaleza');
 
-
 // Consulta SQL para recuperar o tipo e o número do ticket da tabela 'atual'
-$sql = "SELECT tipo, numero FROM atual";
+$sql = "SELECT * FROM atual";
 $resultado = $conn->query($sql);
 
 // Verificar se há resultados

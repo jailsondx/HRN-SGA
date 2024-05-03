@@ -1,0 +1,81 @@
+
+
+[29-04-2024 15-13-27]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-52
+Operação: Chamado com sucesso!
+
+[29-04-2024 15-13-28]
+IP de Origem do Evento: ::1
+Ticket: Visitante-32
+Operação: Chamado com sucesso!
+
+[29-04-2024 15-13-29]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-53
+Operação: Chamado com sucesso!
+
+[29-04-2024 15-24-05]
+IP de Origem do Evento: ::1
+Ticket: Visitante-33
+Operação: Chamado com sucesso!
+
+[29-04-2024 15-24-12]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-54
+Operação: Chamado com sucesso!
+
+[29-04-2024 15-24-21]
+IP de Origem do Evento: ::1
+Ticket: Visitante-34
+Operação: Chamado com sucesso!
+
+[29-04-2024 17-30-51]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-55
+Operação: Chamado com sucesso!
+
+[29-04-2024 17-30-56]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-56
+Operação: Chamado com sucesso!
+
+[29-04-2024 17-31-48]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-57
+Operação: Chamado com sucesso!
+
+[29-04-2024 17-47-48]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-58
+Operação: Chamado com sucesso!
+
+[29-04-2024 17-48-34]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-59
+Operação: Chamado com sucesso!
+
+[29-04-2024 17-53-38]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-60
+Operação: Chamado com sucesso!
+
+[29-04-2024 17-53-47]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-61
+Operação: Chamado com sucesso!
+
+[29-04-2024 17-59-50]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-62
+Operação: Chamado com sucesso!
+
+[29-04-2024 18-03-18]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-63
+Operação: Chamado com sucesso!
+
+[29-04-2024 18-03-22]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-64
+Operação: Chamado com sucesso!

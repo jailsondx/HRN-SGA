@@ -84,11 +84,23 @@
   }
 
 
+@keyframes flash-animation {
+    0% { opacity: 1; } /* Define a opacidade inicial como 100% (totalmente visível) */
+    50% { opacity: 0; } /* Define a opacidade como 0% (invisível) no meio da animação */
+    100% { opacity: 1; } /* Define a opacidade final como 100% (totalmente visível) */
+}
+
+
 body {
     font-family: Poppins-Regular, Arial, sans-serif; /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
     margin: 0;
     padding: 0;
     background-color: #e1dbdb;
+}
+
+.flash {
+    color: red;
+    animation: flash-animation 1s 3; /* Define a animação 'flash-animation' com uma duração de 1 segundo e 3 repetições */
 }
 
 .container {

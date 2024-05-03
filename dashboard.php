@@ -29,10 +29,15 @@
         <!-- Local onde o valor retornado do banco de dados será exibido -->
        <div id="ticketInfo"></div>
         <!-- Botão para chamar Tickets -->
-        <p><button id='btnExibeTicketEmOrdem' type="button" class="btn btn-warning btn-lg btn-block">Chamar Próximo</button></p>
-        <div class="botoes">
+        <div class="botoesSup">
+          <button id='btnExibeTicketEmOrdem' type="button" class="btn btn-warning">Chamar Próximo</button>
+          <button id='btnRepeteUltimo' type="button" class="btn btn-secondary">Chamar Novamente o Ultimo</button>
+        </div>
+        <div class="botoesInf">
           <button id='btnExibeTicketAcompanhante' type="button" class="btn btn-primary">Chamar Acompanhante</button>
           <button id='btnExibeTicketVisitante' type="button" class="btn btn-primary">Chamar Visitante</button>
+          <button id='btnExibeAtendimentoPrioritario' type="button" class="btn btn-primary">Atendimento Prioritario</button>
+          <button id='btnExibeOutros' type="button" class="btn btn-primary">Outros</button>
         </div>
       </div>
       <div class="estatisticas">

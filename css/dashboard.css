@@ -1,3 +1,27 @@
+@media screen and (max-width: 768px){/*Celulares*/
+  #ticketInfo{
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px){/*Tablets*/
+  #ticketInfo{
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px){/*Computadores*/
+  #ticketInfo{
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
+    font-size: 3rem;
+    height: 10vh;
+    margin: 5%;
+  }
+}
+
+
 @font-face {
   font-family: Poppins-Regular;
   src: url('../font/poppins/Poppins-Regular.ttf') format('truetype');
@@ -98,23 +122,32 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
   }
-  
 
-  #ticketInfo{
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
-    font-size: 3vw;
-    height: 5vw;
-    margin: 3vw;
-    margin-top: 4vw;
-  }
+.botoesSup{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center /*Alinha os textos ao centro horizontalmente*/;
+  justify-content: center; /* Alinha os itens horizontalmente ao centro */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  height: auto;
+  width: 80%;
+  -ms-flex-align: end;
+}
 
-.botoes{
+.botoesInf{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center /*Alinha os textos ao centro horizontalmente*/;
+  justify-content: center; /* Alinha os itens horizontalmente ao centro */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  height: auto;
+  width: 100%;
   -ms-flex-align: end;
 }
 
   .btn{
-    padding: 1rem;
-    margin: 0.5rem;
-    margin-top: -1rem;
+    margin: 1%;
+    padding: 2%;
+    font-size: 80%;
   }
   
