@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function exibirTicket(tipo) {
         // Faz uma chamada AJAX para o arquivo PHP
         $.ajax({
-            url: './php/chamaTickets.php',
+            url: '../php/chamaTickets.php',
             type: 'POST', // ou 'GET', dependendo da sua configuração no arquivo PHP
             data: { action: tipo }, // Passa o tipo como um parâmetro para o arquivo PHP
             success: function(response) {

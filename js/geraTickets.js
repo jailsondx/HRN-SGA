@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
     function exibirTicket(tipo) {
         // Faz uma chamada AJAX para o arquivo PHP
         $.ajax({
-            url: './php/geraTickets.php',
+            url: '../php/geraTickets.php',
             type: 'POST', // ou 'GET', dependendo da sua configuração no arquivo PHP
             data: { action: tipo }, // Passa o tipo como um parâmetro para o arquivo PHP
             success: function(response) {
                 // Trata a resposta do servidor
-                console.log('geraTickets.js: Ticket ' + response);
+                console.log('geraTickets.js: Ticket (geraTickets.php)' + response);
             },
             error: function(xhr, status, error) {
                 // Trata erros de requisição AJAX
@@ -34,12 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
     
     $('#VA').click(function() {
         exibirTicket('VA');
-        window.location.href = "cliente.html";
+        //window.location.href = "../cliente.html";
     });
     
     $('#CE').click(function() {
         exibirTicket('CE');
-        window.location.href = "cliente.html";
+        //window.location.href = "../cliente.html";
     });
 
 

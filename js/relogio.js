@@ -13,7 +13,7 @@ function displayTime() {
     day = day < 10 ? '0' + day : day;
     month = month < 10 ? '0' + month : month;
     
-    var timeString = day + '/' + month + '/' + year +' '+ hours + ':' + minutes + ':' + seconds;
+    var timeString = day + '/' + month + '/' + year + ' ' + hours + ':' + minutes + ':' + seconds;
     document.getElementById('clock').innerHTML = timeString;
 }
 

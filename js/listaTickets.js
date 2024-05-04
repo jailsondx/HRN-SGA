@@ -1,6 +1,6 @@
 function listaTicketsGerados() {
     $.ajax({
-        url: './php/listaTickets.php', // Arquivo PHP que retorna a lista de tickets gerados
+        url: '../php/listaTickets.php', // Arquivo PHP que retorna a lista de tickets gerados
         method: 'GET',
         success: function(data) {
             $('#tickets').html(data); // Atualiza o conteúdo da div com a lista de tickets gerados

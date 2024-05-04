@@ -1,5 +1,5 @@
 // Caminho do arquivo TXT
-const filePath = './Tickets/Tickets_Logs '+getDate()+'.txt';
+const filePath = '../Tickets/Chamados/Tickets_Chamados '+getDate()+'.txt';
 
 // Palavras específicas que queremos contar
 const wordsToCount = ['Acompanhante', 'Visitante'];
@@ -34,7 +34,7 @@ function countWords(text, words) {
 function displayResults(results) {
     const resultDiv = document.getElementById('Q01-dados');
     //let html = 'Atendimentos Totais Hoje';
-    let html = '<table><tr><td id="td-ico"><img src="./imgs/silhueta-do-grupo-de-usuarios.png" id="icons-estatisticas"></td><td>';
+    let html = '<table><tr><td id="td-ico"><img src="../imgs/silhueta-do-grupo-de-usuarios.png" id="icons-estatisticas"></td><td>';
     Object.keys(results).forEach(word => {
         html += word + ': ' + results[word] + '<br>';
     });
@@ -56,15 +56,13 @@ function getDate() {
     const formattedDate = day + '-' + month + '-' + year;
     
      // Saída: 31-03-2023 (para 31 de março de 2023)
-    console.log(formattedDate);
+    //console.log(formattedDate);
     return formattedDate;
     
 }
 
 // Função para atualizar as informações a cada 5 segundos
-function updateInfo() {
-    // Caminho do arquivo TXT
-    const filePath = './Tickets/Tickets_Logs ' + getDate() + '.txt';
+function updateInfo(filePath) {
 
     // Ler o arquivo de texto e contar as ocorrências das palavras específicas
     readFile(filePath, text => {
@@ -75,7 +73,7 @@ function updateInfo() {
 
 
 // Atualizar as informações imediatamente ao carregar a página
-updateInfo();
+updateInfo(filePath);
 
 // Atualizar as informações a cada 5 segundos
-setInterval(updateInfo, 5000);
+setInterval(updateInfo(filePath), 1000);

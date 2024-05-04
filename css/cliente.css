@@ -37,13 +37,30 @@
     src: url('../font/poppins/Poppins-Bold.ttf') format('truetype');
   }
 
-body {
+  body {
     font-family: Poppins-Bold, Arial, sans-serif; /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
     margin: 0;
     padding: 0;
-    background-color: #e1dbdb;
+    background-color: #f0f0f0; /* Cor de fundo sem opacidade */
+    position: relative; /* Define a posição relativa para que os elementos posicionados absolutamente fiquem relativos a este */
 }
 
+.background-image {
+    background-image: url("../imgs/hrn.jpg");
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Redimensiona a imagem de fundo para cobrir todo o contêiner */
+    position: relative; /* Importante: Defina a posição relativa para que o pseudo-elemento fique posicionado em relação a este */
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(233, 233, 233, 0.7); /* Cor semi-transparente*/
+}
 
 .container {
     display: flex;
@@ -52,6 +69,10 @@ body {
     text-align: center /*Alinha os textos ao centro horizontalmente*/;
     justify-content: center; /* Alinha os itens horizontalmente ao centro */
     align-items: center; /* Alinha os itens verticalmente ao centro */
+
+    /*Opacidade*/
+    position: relative; /* Certifique-se de que o conteúdo dentro da div esteja posicionado relativamente à div pai */
+    z-index: 1; /* Garante que o conteúdo fique acima da camada semi-transparente */
 }
 
 .break {
@@ -106,4 +127,8 @@ body {
     margin-top: 1vh;
     height: 12vh; /* Altura do container */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+     /*Opacidade*/
+     position: relative; /* Certifique-se de que o conteúdo dentro da div esteja posicionado relativamente à div pai */
+     z-index: 1; /* Garante que o conteúdo fique acima da camada semi-transparente */
 }

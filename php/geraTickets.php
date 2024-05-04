@@ -71,10 +71,11 @@ function geraTicket($conn, $tipo){
             $sql_insert = "INSERT INTO tickets (tipo, numero, estado, dia) VALUES ('$tipo', '$numero', '$estado', '$data')";
             if ($conn->query($sql_insert) === TRUE) {
                 $operacao = "Ticket Gerado, Novo registro inserido com sucesso!";
-                geraLog($tipo, $numero, $operacao);
+                geraLogTicketGerados($tipo, $numero, $operacao);
+                echo json_encode($tipo . '-' . $numero);
             } else {
                 $operacao = "Erro ao inserir novo registro: " . $conn->error;
-                geraLog($tipo, $numero, $operacao);
+                geraLogTicketGerados($tipo, $numero, $operacao);
             }
         } else {
             // Se não houver registros na tabela, define o próximo número como 1
@@ -83,10 +84,10 @@ function geraTicket($conn, $tipo){
             $sql_insert_primeiro = "INSERT INTO tickets (tipo, numero, estado, dia) VALUES ('$tipo', '$numero', '$estado', '$data')";
             if ($conn->query($sql_insert_primeiro) === TRUE) {
                 $operacao = "Primeor Ticket Gerado, Primeiro registro inserido com sucesso!";
-                geraLog($tipo, $numero, $operacao);
+                geraLogTicketGerados($tipo, $numero, $operacao);
             } else {
                 $operacao = "Erro ao inserir primeiro registro: " . $conn->error;
-                geraLog($tipo, $numero, $operacao);
+                geraLogTicketGerados($tipo, $numero, $operacao);
             }
         }
 
