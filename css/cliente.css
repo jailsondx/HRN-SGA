@@ -110,9 +110,9 @@
 .tipoTicket:hover{
     background-image: linear-gradient(to bottom right, #FFC300,#FFC300,#FFC300);
     color: black;
-    transform: scale(1.1);
-    
+    transform: scale(1.1); 
 }
+
 .tipoTicket:active{
     transform: scale(0.80);
 }

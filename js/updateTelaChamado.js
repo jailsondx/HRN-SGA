@@ -1,42 +1,28 @@
-
-/*
 document.addEventListener("DOMContentLoaded", function() {
-    // Função para fazer uma requisição AJAX para o PHP e atualizar a div com o ticket
-    function atualizarTicket() {
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("ticketChamado").innerText = this.responseText;
-            }
-        };
-        xhr.open("GET", "./php/updateTelaChamado.php", true);
-        xhr.send();
-    }
 
-    // Atualizar o ticket a cada 1 segundo
-    setInterval(atualizarTicket, 1000);
-
-    // Atualizar o ticket imediatamente ao carregar a página
-    atualizarTicket();
-});
-
-*/
-
-
-document.addEventListener("DOMContentLoaded", function() {
     // Função para fazer uma requisição AJAX para o PHP e atualizar a div com o ticket
     function atualizarTicket() {                   
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var ticketChamado = document.getElementById("ticketChamado");
-                var novoValor = this.responseText.trim(); // Remove espaços em branco no início e no fim
-                var valorAnterior = ticketChamado.innerText.trim();
-                //var novoValor = this.responseText;
-                //var valorAnterior = ticketChamado.innerText;
+                
+                // Divide o valor recebido em duas partes usando a vírgula como delimitador
+                const valorRecebidoTabelaAtual = this.responseText.split(',');
+                        
+                // Atribui as partes divididas às variáveis
+                var novoTicket = valorRecebidoTabelaAtual[0];
+                var guiche = valorRecebidoTabelaAtual[1];
+                
+                //var novoTicket = this.responseText.trim(); // Remove espaços em branco no início e no fim
+                novoTicket = novoTicket.trim(); // Remove espaços em branco no início e no fim
+
+                var ticketAnterior = ticketChamado.innerText.trim();
+                //var novoTicket = this.responseText;
+                //var ticketAnterior = ticketChamado.innerText;
 
                 // Verifica se o novo valor é diferente do valor anterior
-                if (novoValor !== valorAnterior) {
+                if (novoTicket !== ticketAnterior) {
                     // Adiciona a classe 'flash'
                     ticketChamado.classList.add("flash");
 
@@ -49,11 +35,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     executarBipe();
 
                     // Falar o novo valor usando a API de Text-to-Speech
-                    falarTexto(novoValor);
+                    falarTexto(novoTicket);
+                    falarTexto(guiche);
+
+                    //$('#Guiche').html(selectedOption);
                 }
 
                 // Atualiza o conteúdo da div com o novo valor
-                ticketChamado.innerText = novoValor;
+                ticketChamado.innerText = novoTicket;
+                guicheChamado.innerText = guiche;
             }
         };
         xhr.open("GET", "./php/updateTelaChamado.php", true);
@@ -62,9 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Atualizar o ticket a cada 1 segundo
     setInterval(atualizarTicket, 1000);
-
-    // Atualizar o ticket imediatamente ao carregar a página
-    //atualizarTicket();
 
     // Função para falar o texto usando a API de Text-to-Speech
     function falarTexto(texto) {
@@ -81,21 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-/*
-    // Seleciona o botão pelo ID
-    var btnRepeteUltimo = document.getElementById("btnRepeteUltimo");
-
-    // Adiciona o evento de clique ao botão
-    btnRepeteUltimo.addEventListener("click", function() {
-        // Chama a função para falar o texto
-        //falarTexto(document.getElementById('ticketInfo').innerText);
-        window.speechSynthesis.speak(document.getElementById('ticketInfo').innerText);
-    });
-});
-*/
 
 function executarBipe(){
     var som = new Audio('./sound/Notification.mp3');
     som.play();
 }
 });
+

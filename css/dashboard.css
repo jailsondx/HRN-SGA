@@ -116,6 +116,20 @@ body {
     max-height: 50%; /* Altura máxima igual à altura do contêiner */
   }
   
+  #defineGuiche{
+    text-align: center;
+    color: #f0f0f0;
+    background-color: rgb(70, 70, 70);
+    margin-top: 8%;
+    border: none;
+    width: 70%;
+    height: 30%;
+  }
+   #defineGuiche::after{
+    background-color: red;
+   }
+
+
   .right-column {
     width: 20vw;
     background-color: white;
@@ -150,4 +164,13 @@ body {
     padding: 2%;
     font-size: 80%;
   }
+
+  .btn:hover{
+    color: black;
+    transform: scale(1.1); 
+}
+
+.btn:active{
+  transform: scale(0.90);
+}
   

@@ -1,0 +1,336 @@
+
+
+[11-05-2024 11-13-43]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-67
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-44]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-68
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-44]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-69
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-45]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-70
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-46]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-71
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-46]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-72
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-47]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-73
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-47]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-74
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-48]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-75
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-49]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-76
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-49]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-77
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 11-13-50]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-78
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-28-09]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-79
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-28-10]
+IP de Origem do Evento: ::1
+Ticket: Visitante-45
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-28-38]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-80
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-28-39]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-81
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-28-39]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-82
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-28-40]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-83
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-28-40]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-84
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-28-40]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-85
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-29-38]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-12
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-29-39]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-13
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-29-56]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-6
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-31-59]
+IP de Origem do Evento: ::1
+Ticket: Visitante-46
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-33-23]
+IP de Origem do Evento: ::1
+Ticket: Visitante-47
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-34-04]
+IP de Origem do Evento: ::1
+Ticket: Visitante-48
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-34-10]
+IP de Origem do Evento: ::1
+Ticket: Visitante-49
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-34-10]
+IP de Origem do Evento: ::1
+Ticket: Visitante-50
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-34-58]
+IP de Origem do Evento: ::1
+Ticket: Visitante-51
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-36-23]
+IP de Origem do Evento: ::1
+Ticket: Visitante-52
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-38-44]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-14
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-39-14]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-15
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-39-50]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-7
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-39-59]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-8
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-40-38]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-9
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-41-08]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-10
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-41-14]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-11
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-44-07]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-16
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-44-35]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-17
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-48-13]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-18
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-48-16]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-19
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-48-48]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-12
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-48-52]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-13
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-49-33]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-50-09]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-2
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-51-54]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-3
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-51-58]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-4
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-52-05]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-53-01]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-2
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-53-04]
+IP de Origem do Evento: ::1
+Ticket: Credencial Esquecida-5
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-53-28]
+IP de Origem do Evento: ::1
+Ticket: Visita Administrativa-3
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-56-24]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-56-28]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-2
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-56-29]
+IP de Origem do Evento: ::1
+Ticket: Visitante-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-57-09]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-3
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-57-15]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-4
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-57-16]
+IP de Origem do Evento: ::1
+Ticket: Visitante-2
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-57-48]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-5
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-59-03]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-6
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 16-59-45]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-7
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 17-00-34]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-8
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 17-00-39]
+IP de Origem do Evento: ::1
+Ticket: Visitante-3
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 17-04-15]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-9
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 17-04-15]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-10
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 17-06-26]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-11
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 17-06-26]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-12
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[11-05-2024 17-07-48]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-13
+Operação: Ticket Gerado, Novo registro inserido com sucesso!

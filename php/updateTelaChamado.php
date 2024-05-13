@@ -12,7 +12,7 @@ $resultado = $conn->query($sql);
 if ($resultado->num_rows > 0) {
     // Retornar o tipo e o número do ticket
     $row = $resultado->fetch_assoc();
-    echo $row["tipo"] . " - " . $row["numero"];
+    echo $row["tipo"] . " " . $row["numero"] . "," . $row["guiche"];
 } else {
     echo "Nenhum ticket encontrado";
 }

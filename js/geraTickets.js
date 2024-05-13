@@ -8,7 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
             data: { action: tipo }, // Passa o tipo como um parâmetro para o arquivo PHP
             success: function(response) {
                 // Trata a resposta do servidor
-                console.log('geraTickets.js: Ticket (geraTickets.php)' + response);
+                var data = {
+                    'Arquivo JS': 'geraTickets.js',
+                    'Arquivo PHP': 'geraTickets.php',
+                    'Ticket gerado': response
+                };
+                console.table(data);
             },
             error: function(xhr, status, error) {
                 // Trata erros de requisição AJAX

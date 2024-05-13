@@ -19,10 +19,9 @@
 </head>
 <body>
     <!-- Scripts JavaScript -->
-    <script src="./js/relogio.js"></script>
-    <script src="./js/updateTelaChamado.js"></script>
-    <script src="./js/listaTicketsAnteriores.js"></script>
-    <script src="./js/chamaTickets.js"></script>
+    <script type="module" src="./js/relogio.js"></script>
+    <script type="module" src="./js/updateTelaChamado.js"></script>
+    <script type="module" src="./js/listaTicketsAnteriores.js"></script>
 
     <!-- Conteúdo da página -->
     <div class="container">
@@ -32,6 +31,7 @@
             <div>Ticket Em Atendimento</div>
             <!-- Local onde o valor retornado do do BD tabela 'atual' será exibido -->
             <div id="ticketChamado"><!-- Aqui será exibido o número do ticket --></div>
+            <div id="guicheChamado">---<!-- Aqui será exibido o número do ticket --></div>
         </div>
       
         <!-- Coluna direita -->

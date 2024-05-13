@@ -1,0 +1,7 @@
+
+
+[12-05-2024 21-02-29]
+IP de Origem do Evento: ::1
+Ticket: Acompanhante-1
+Guiche: Guiche 01
+Operação: Chamado com sucesso!

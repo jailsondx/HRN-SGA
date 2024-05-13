@@ -7,8 +7,20 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AJAX -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+
+    <!-- BOOTBOX -->
+    <script src="../libs/js/bootbox.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+
+    <!-- POPPINSJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.5"></script>
+
+    <!-- Links Proprios -->
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="icon" href="../imgs/logo.ico" type="image/x-icon">
 
@@ -17,9 +29,10 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <script src="../js/listaTickets.js"></script>
-    <script src="../js/chamaTickets.js"></script>
-    <script src="../js/contadorAtendimentos.js"></script>
+    <script type="module" src="../js/listaTickets.js"></script>
+    <script type="module" src="../js/chamaTickets.js"></script>
+    <script type="module" src="../js/contadorAtendimentos.js"></script>
+    <script type="module" src="../js/defineGuiche.js"></script>
 
 <div class="container">
 
@@ -28,6 +41,7 @@
         <h1><b>Ticket em Atendimento</b></h1>
         <!-- Local onde o valor retornado do banco de dados será exibido -->
        <div id="ticketInfo"></div>
+       <div id="Guiche"></div>
         <!-- Botão para chamar Tickets -->
         <div class="botoesSup">
           <button id='btnExibeTicketEmOrdem' type="button" class="btn btn-warning">Chamar Próximo</button>
@@ -43,12 +57,23 @@
       <div class="estatisticas">
         <h3>Estatisticas</h3>
         <div class="quadros">
+          
           <div id="Q01">
             <b>Atendimentos realizados hoje</b><br>
             <span id="Q01-dados"></span>
           </div>
+          
           <div id="Q02">TESTE 02</div>
-          <div id="Q03">TESTE 03</div>
+          
+          <div id="Q03">
+            <b>Guichê</b><br>
+            <select id="defineGuiche">
+              <option value="---">---</option>
+              <option value="Guiche 01">guichê 01</option>
+              <option value="Guiche 02">guichê 02</option>
+            </select>
+          </div>
+
         </div>
       </div>
 
@@ -61,6 +86,7 @@
   </div>
 
 </div><!--FIM DIV CONTAINER-->
+
 
 </body>
 </html>
