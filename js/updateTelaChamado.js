@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 guicheChamado.innerText = guiche;
             }
         };
-        xhr.open("GET", "./php/updateTelaChamado.php", true);
+        xhr.open("GET", "../php/updateTelaChamado.php", true);
         xhr.send();
     }
 
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
 
 function executarBipe(){
-    var som = new Audio('./sound/Notification.mp3');
+    var som = new Audio('../sound/Notification.mp3');
     som.play();
 }
 });

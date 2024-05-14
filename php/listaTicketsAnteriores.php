@@ -1,5 +1,6 @@
 <?php
 include_once 'conexaoDB.php';
+include_once 'formataNumeroTicket.php';
 
 //---------------------------VERIFICAÇÃO PARA ATUALIZAR A LISTA DE TICKETS NA TELA DE DASHBOARD--------------------------------------
 // Verificar se a requisição é AJAX e, em seguida, chamar a função e imprimir a lista
@@ -7,12 +8,12 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUE
     echo obterTicketsGerados($conn);
 }
 
-
 function obterTicketsGerados($conn) {
     // Verificar conexão
     if ($conn->connect_error) {
        return "Erro ao conectar ao banco de dados: " . $conn->connect_error;
    }
+    
 
    // Consulta SQL para selecionar os resultados da tabela 'ticket' com estado 'GERADO'
    $sql = "SELECT * FROM tickets WHERE estado = 'ATENDIMENTO' ORDER BY dia DESC LIMIT 5";
@@ -26,7 +27,7 @@ function obterTicketsGerados($conn) {
        // Iterar sobre os resultados e adicionar cada um à saída HTML
        while ($row = $resultado->fetch_assoc()) {
             $html .= "<tr>";
-            $html .= "<td>" . $row["tipo"] . "-" . $row["numero"] . "</td>";
+            $html .= "<td>" . $row["tipo"] . " " . formatarNumeroTicket($row["numero"]) . "</td>";
             $html .= "</tr>";
        }
 

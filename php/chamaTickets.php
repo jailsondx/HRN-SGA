@@ -9,33 +9,35 @@ date_default_timezone_set("America/Fortaleza");
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["tipo"]) && isset($_POST["guiche"])) {
     $tipoTicketChamado = "";
     switch ($_POST["tipo"]) {
-        case "btnExibeTicketAcompanhante":
-            $tipoTicketChamado = "ACOMPANHANTE";
-            $guiche = $_POST["guiche"];
-            buscarTicketEAtualizarEstado($conn, $tipoTicketChamado, $guiche);
+        case "A":
+            buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
             break;
-        case "btnExibeTicketVisitante":
-            $tipoTicketChamado = "VISITANTE";
-            $guiche = $_POST["guiche"];
-            buscarTicketEAtualizarEstado($conn, $tipoTicketChamado, $guiche);
+        case "V":
+            buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
             break;
-        case "btnExibeAtendimentoPrioritario":
-            $tipoTicketChamado = "ATENDIMENTO PRIORITARIO";
-            $guiche = $_POST["guiche"];
-            buscarTicketEAtualizarEstado($conn, $tipoTicketChamado, $guiche);
+        case "I":
+            buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
             break;
-        case "btnExibeOutros":
-            $tipoTicketChamado = "VISITA ADMINISTRATIVA";
-            $guiche = $_POST["guiche"];
-            buscarTicketEAtualizarEstado($conn, $tipoTicketChamado, $guiche);
+        case "AP":
+            buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
             break;
-        case "btnExibeOutros":
-            $tipoTicketChamado = "CREDENCIAL ESQUECIDA";
-            $guiche = $_POST["guiche"];
-            buscarTicketEAtualizarEstado($conn, $tipoTicketChamado, $guiche);
+        case "DHO":
+            buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
             break;
-        case "btnExibeTicketEmOrdem":
-            $tipoTicketChamado = "ORDEM";
+        case "SESMT":
+            buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
+            break;
+        case "SC":
+            buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
+            break;
+        case "VA":
+            buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
+            break;
+        case "EX":
+            buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
+            break;
+        case "INF":
+            buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
             break;
         case "btnRepeteUltimo":
             $tipoTicketChamado = "REPETIR";
@@ -77,7 +79,7 @@ function buscarTicketEAtualizarEstado($conn, $tipoTicketChamado, $guiche){
             $conn->query($sql_update_atual) === true
         ) {
             // Envie uma resposta de sucesso
-            echo json_encode($tipo_ticket . "-" . $numero_ticket);
+            echo json_encode($tipo_ticket . " " . formatarNumeroTicket($numero_ticket));
             //Gera Log da Chamada
             $operacao = "Chamado com sucesso!";
             geraLogTicketChamados($tipo_ticket, $numero_ticket, $operacao, $guiche);
@@ -124,7 +126,7 @@ function repeteTicket($conn, $tipoTicketChamado){
             // Execute a query SQL de atualização
             if ($conn->query($sql_update_atual) === true) {
                 // Envie uma resposta de sucesso
-                echo json_encode($tipo_ticket . " " . $numero_ticket);
+                echo json_encode($tipo_ticket . " " . formatarNumeroTicket($numero_ticket));
                 //Gera Log da Chamada
                 //$operacao = "Chamado com sucesso!";
                 //geraLog($tipo_ticket, $numero_ticket, $operacao);

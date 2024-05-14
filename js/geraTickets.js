@@ -24,27 +24,52 @@ document.addEventListener("DOMContentLoaded", function() {
 
     $('#A').click(function() {
         exibirTicket('A');
-        //window.location.href = "cliente.html";
+        //window.location.href = "totem.html";
     });
 
     $('#V').click(function() {
         exibirTicket('V');
-        //window.location.href = "cliente.html";
+        //window.location.href = "totem.html";
     });
 
+    $('#I').click(function() {
+        exibirTicket('I');
+        //window.location.href = "totem.html";
+    });
+    
     $('#AP').click(function() {
         exibirTicket('AP');
-        //window.location.href = "cliente.html";
+        //window.location.href = "../totem.html";
+    });
+
+    $('#DHO').click(function() {
+        exibirTicket('DHO');
+        window.location.href = "totem.html";
+    });
+
+    $('#SESMT').click(function() {
+        exibirTicket('SESMT');
+        window.location.href = "totem.html";
     });
     
+    $('#SC').click(function() {
+        exibirTicket('SC');
+        window.location.href = "totem.html";
+    });
+
+    $('#EX').click(function() {
+        exibirTicket('EX');
+        window.location.href = "totem.html";
+    });
+
     $('#VA').click(function() {
         exibirTicket('VA');
-        //window.location.href = "../cliente.html";
+        window.location.href = "totem.html";
     });
-    
-    $('#CE').click(function() {
-        exibirTicket('CE');
-        //window.location.href = "../cliente.html";
+
+    $('#INF').click(function() {
+        exibirTicket('INF');
+        window.location.href = "totem.html";
     });
 
 

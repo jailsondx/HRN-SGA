@@ -1,4 +1,7 @@
 <?php
+
+include 'formataNumeroTicket.php';
+
 function geraLog($tipoTicket, $numero, $operacao){
     //função que escreve os tickets em txt
     //Cria o log; se der erro na pasta dar acesso chmod 777
@@ -19,7 +22,7 @@ function geraLogTicketGerados($tipoTicket, $numero, $operacao){
     $data = date("d-m-Y H-i-s");
     $ip = getIp();
 
-    $msg = "\n\n[".$data."]\nIP de Origem do Evento: " . $ip . "\nTicket: " . $tipoTicket . "-" . $numero . "\nOperação: " . $operacao;
+    $msg = "\n\n[".$data."]\nIP de Origem do Evento: " . $ip . "\nTicket: " . $tipoTicket . "-" . formatarNumeroTicket($numero) . "\nOperação: " . $operacao;
     $fp = fopen("../Tickets/Gerados/Tickets_Gerados ".$hoje.".txt",'a+');
     fwrite($fp,$msg); 
     fclose($fp);
@@ -32,7 +35,7 @@ function geraLogTicketChamados($tipoTicket, $numero, $operacao, $guiche){
     $data = date("d-m-Y H-i-s");
     $ip = getIp();
 
-    $msg = "\n\n[".$data."]\nIP de Origem do Evento: " . $ip . "\nTicket: " . $tipoTicket . "-" . $numero . "\nGuiche: " . $guiche ."\nOperação: " . $operacao;
+    $msg = "\n\n[".$data."]\nIP de Origem do Evento: " . $ip . "\nTicket: " . $tipoTicket . "-" . formatarNumeroTicket($numero) . "\nGuiche: " . $guiche ."\nOperação: " . $operacao;
     $fp = fopen("../Tickets/Chamados/Tickets_Chamados ".$hoje.".txt",'a+');
     fwrite($fp,$msg); 
     fclose($fp);

@@ -1,29 +1,38 @@
 // Caminho do arquivo TXT
-const filePath = '../Tickets/Chamados/Tickets_Chamados '+getDate()+'.txt';
+const filePath = `../Tickets/Chamados/Tickets_Chamados ${getDate()}.txt`;
 
 // Palavras específicas que queremos contar
-const wordsToCount = ['Acompanhante', 'Visitante'];
+const wordsToCount = ['A', 'V', 'I', 'AP', 'DHO', 'SESMT', 'SC', 'VA', 'EX', 'INF'];
+
+
+
 
 // Função para ler o arquivo de texto
-function readFile(filePath, callback) {
-    fetch(filePath)
-        .then(response => response.text())
-        .then(text => callback(text))
-        .catch(error => console.error('Erro ao ler o arquivo:', error));
+async function readFile(filePath) {
+    try {
+        const response = await fetch(filePath);
+        return await response.text();
+    } catch (error) {
+        console.error('Erro ao ler o arquivo:', error);
+    }
 }
 
-// Função para contar ocorrências de palavras específicas
-function countWords(text, words) {
-    const wordCounts = {};
-    const lines = text.split('\n');
 
-    lines.forEach(line => {
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+// Função para contar ocorrências de palavras específicas
+function countWords_Estratificado(text, words) {
+    const wordCounts = words.reduce((acc, word) => {
+        acc[word] = 0;
+        return acc;
+    }, {});
+
+    text.split('\n').forEach(line => {
         words.forEach(word => {
-            const regex = new RegExp('\\b' + word + '\\b', 'gi');
+            const regex = new RegExp(`\\b${word}\\b`, 'gi');
             const matches = line.match(regex);
-            if (matches) {
-                wordCounts[word] = (wordCounts[word] || 0) + matches.length;
-            }
+            if (matches) wordCounts[word] += matches.length;
         });
     });
 
@@ -31,49 +40,94 @@ function countWords(text, words) {
 }
 
 // Função para exibir os resultados na div "result"
-function displayResults(results) {
+function displayResults_Estratificado(results) {
     const resultDiv = document.getElementById('Q01-dados');
-    //let html = 'Atendimentos Totais Hoje';
-    let html = '<table><tr><td id="td-ico"><img src="../imgs/silhueta-do-grupo-de-usuarios.png" id="icons-estatisticas"></td><td>';
-    Object.keys(results).forEach(word => {
-        html += word + ': ' + results[word] + '<br>';
-    });
-    html += '</td></tr></table>';
+    const html = `
+        <table>
+            <tr>
+                <td id="td-ico">
+                    <img src="../imgs/silhueta-do-grupo-de-usuarios.png" id="icons-estatisticas">
+                </td>
+                <td>
+                    ${Object.entries(results).map(([word, count]) => `${word}: ${count}`).join('<br>')}
+                </td>
+            </tr>
+        </table>
+    `;
     resultDiv.innerHTML = html;
 }
+//-------------------------------------------------------------------------------------------------------------------------------------
 
-//Função GETDATA
-function getDate() {
-    // Criar um novo objeto Date
-    const today = new Date();
-    
-    // Extrair o ano, mês e dia
-    const year = today.getFullYear();
-    const month = String(today.getMonth() + 1).padStart(2, '0'); // Os meses são indexados a partir de zero, então adicionamos 1
-    const day = String(today.getDate()).padStart(2, '0');
-    
-    // Formatar a data no formato desejado (por exemplo, DD-MM-YYYY)
-    const formattedDate = day + '-' + month + '-' + year;
-    
-     // Saída: 31-03-2023 (para 31 de março de 2023)
-    //console.log(formattedDate);
-    return formattedDate;
-    
-}
 
-// Função para atualizar as informações a cada 5 segundos
-function updateInfo(filePath) {
 
-    // Ler o arquivo de texto e contar as ocorrências das palavras específicas
-    readFile(filePath, text => {
-        const wordCounts = countWords(text, wordsToCount);
-        displayResults(wordCounts);
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+// Função para contar ocorrências de palavras específicas
+function countWords(text, words) {
+    let totalCount = 0;
+
+    text.split('\n').forEach(line => {
+        words.forEach(word => {
+            const regex = new RegExp(`\\b${word}\\b`, 'gi');
+            const matches = line.match(regex);
+            if (matches) totalCount += matches.length;
+        });
     });
+
+    return totalCount;
 }
+
+// Função para exibir o resultado total na div "result"
+function displayTotalCount(totalCount) {
+    const resultDiv = document.getElementById('Q01-dados');
+    const html = `
+        <table>
+            <tr>
+                <td id="td-ico">
+                    <img src="../imgs/silhueta-do-grupo-de-usuarios.png" id="icons-estatisticas">
+                </td>
+                <td>
+                    ${totalCount}
+                </td>
+            </tr>
+        </table>
+    `;
+    resultDiv.innerHTML = html;
+}
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+// Função para obter a data atual no formato desejado
+function getDate() {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    return `${day}-${month}-${year}`;
+}
+
+// Função para atualizar as informações
+async function updateInfo() {
+    const text = await readFile(filePath);
+    if (text) {
+        const wordCounts = countWords(text, wordsToCount);
+        displayTotalCount(wordCounts);
+    }
+}
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 // Atualizar as informações imediatamente ao carregar a página
-updateInfo(filePath);
+updateInfo();
 
 // Atualizar as informações a cada 5 segundos
-setInterval(updateInfo(filePath), 1000);
+setInterval(updateInfo, 5000);

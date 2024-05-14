@@ -1,176 +1,203 @@
-@media screen and (max-width: 768px){/*Celulares*/
-  #ticketInfo{
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
-    font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1023px){/*Tablets*/
-  #ticketInfo{
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
-    font-size: 2rem;
-  }
-}
-
-@media screen and (min-width: 1024px){/*Computadores*/
-  #ticketInfo{
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
-    font-size: 3rem;
-    height: 10vh;
-    margin: 5%;
-  }
-}
-
-
+/* Importação de fontes */
 @font-face {
-  font-family: Poppins-Regular;
+  font-family: 'Poppins-Regular';
   src: url('../font/poppins/Poppins-Regular.ttf') format('truetype');
-
 }
 
 @font-face {
-  font-family: Poppins-Bold;
+  font-family: 'Poppins-Bold';
   src: url('../font/poppins/Poppins-Bold.ttf') format('truetype');
 }
 
-
+/* Estilos gerais */
 body {
-    background-color: #f0f0f0;
-    font-family: Poppins-Regular, Arial, sans-serif; /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
-    margin: 0;
-    padding: 0;
-  }
+  background-color: #f0f0f0;
+  font-family: 'Poppins-Regular', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  tabel, tr, td{
-    border: 0px solid;
-    text-align: left;
-  }
+table, tr, td {
+  border: 0;
+  text-align: left;
+}
 
-  #td-ico{
-    text-align: center /*Alinha os textos ao centro horizontalmente*/;
-    width: 50%;
-  }
-  
-  .container {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  .left-column {
-    flex: 3;
-    margin: 20px;
-  }
+#td-ico {
+  text-align: center;
+  width: 50%;
+}
 
-  .quadro-infor-tickets{
-    display: flex;
-    flex-direction: column;
-    text-align: center /*Alinha os textos ao centro horizontalmente*/;
-    justify-content: center; /* Alinha os itens horizontalmente ao centro */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    margin: 10px;
-    height: 60vh;
-    border-radius: 2rem 2rem 2rem 2rem;
-    border-top: 2vh solid;
-    border-color: #009993;
-    background-color: white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  }
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
 
-  .estatisticas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Alinha os itens horizontalmente ao centro */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    margin: 10px;
-    height: 30vh;
-    border-radius: 2rem 2rem 2rem 2rem;
-    background-color: white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  }
+.left-column {
+  flex: 3;
+  margin: 20px;
+}
 
-  .quadros{
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 50%;
-    justify-content: center; /* Alinha os itens horizontalmente ao centro */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-  }
+.quadro-infor-tickets {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 60vh;
+  border-radius: 2rem;
+  border-top: 2vh solid;
+  border-color: #009993;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
-  #Q01, #Q02, #Q03{
-    font-size: 0.8rem;
-    flex-grow: 1;
-    text-align: center;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 1rem 1rem;
-    margin: 1vw;
-    height: 100%;
-    width: 100%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  }
+.estatisticas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 30vh;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
-  #icons-estatisticas{
-    max-width: 50%; /* Largura máxima igual à largura do contêiner */
-    max-height: 50%; /* Altura máxima igual à altura do contêiner */
-  }
-  
-  #defineGuiche{
-    text-align: center;
-    color: #f0f0f0;
-    background-color: rgb(70, 70, 70);
-    margin-top: 8%;
-    border: none;
-    width: 70%;
-    height: 30%;
-  }
-   #defineGuiche::after{
-    background-color: red;
-   }
+.quadros {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
 
+#Q01, #Q02, #Q03 {
+  font-size: 0.8rem;
+  flex-grow: 1;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  margin: 1vw;
+  height: 100%;
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
-  .right-column {
-    width: 20vw;
-    background-color: white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-  }
+#Q01-dados {
+  font-size: 3rem;
+}
 
-.botoesSup{
+#icons-estatisticas {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+#defineGuiche {
+  text-align: center;
+  color: #f0f0f0;
+  background-color: rgb(70, 70, 70);
+  margin-top: 8%;
+  border: none;
+  width: 70%;
+  height: 30%;
+}
+
+.right-column {
+  width: 20vw;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.botoesSup, .botoesInf {
   display: flex;
   flex-wrap: wrap;
-  text-align: center /*Alinha os textos ao centro horizontalmente*/;
-  justify-content: center; /* Alinha os itens horizontalmente ao centro */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   height: auto;
   width: 80%;
   -ms-flex-align: end;
 }
 
-.botoesInf{
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center /*Alinha os textos ao centro horizontalmente*/;
-  justify-content: center; /* Alinha os itens horizontalmente ao centro */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-  height: auto;
+.botoesInf {
   width: 100%;
-  -ms-flex-align: end;
 }
 
-  .btn{
-    margin: 1%;
-    padding: 2%;
-    font-size: 80%;
-  }
-
-  .btn:hover{
-    color: black;
-    transform: scale(1.1); 
+.btn {
+  margin: 0.2%;
+  padding: 1%;
+  font-size: 80%;
 }
 
-.btn:active{
+.btn:hover {
+  color: black;
+  background-color: yellowgreen;
+  transform: scale(1.1);
+}
+
+.btn:active {
   transform: scale(0.90);
 }
-  
+
+/* Responsividade para diferentes dispositivos */
+
+/* Celulares */
+@media screen and (max-width: 768px) {
+  #ticketInfo {
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
+    font-size: 1.5rem;
+  }
+  .quadro-infor-tickets {
+    height: 75vh;
+  }
+  .estatisticas {
+    height: 10vh;
+  }
+  h3, #Q01, #Q02, .titulos_quadros {
+    display: none;
+  }
+  #defineGuiche {
+    margin-top: 0%;
+    height: 5vh;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  #ticketInfo {
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
+    font-size: 2rem;
+  }
+  .estatisticas {
+    height: 20vh;
+  }
+}
+
+/* Computadores */
+@media screen and (min-width: 1024px) {
+  #ticketInfo {
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
+    flex-wrap: nowrap;
+    font-size: 3rem;
+    height: 20%;
+    margin: 2%;
+  }
+}
+
+/* Computadores com altura máxima de 500px */
+@media screen and (max-height: 500px) {
+  .estatisticas {
+    display: none;
+  }
+  .quadro-infor-tickets {
+    height: 90vh;
+  }
+  #Q03 {
+    display: block;
+  }
+}

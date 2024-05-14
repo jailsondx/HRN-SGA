@@ -1,5 +1,6 @@
 <?php
 include_once 'conexaoDB.php';
+include_once 'formataNumeroTicket.php';
 
 //---------------------------VERIFICAÇÃO PARA ATUALIZAR A LISTA DE TICKETS NA TELA DE DASHBOARD--------------------------------------
 // Verificar se a requisição é AJAX e, em seguida, chamar a função e imprimir a lista
@@ -25,7 +26,7 @@ function obterTicketsGerados($conn) {
 
        // Iterar sobre os resultados e adicionar cada um à saída HTML
        while ($row = $resultado->fetch_assoc()) {
-           $html .= "<li>" . $row["tipo"] . "-" . $row["numero"] . "</li>";
+           $html .= "<li>" . $row["tipo"] . " " . formatarNumeroTicket($row["numero"]) . "</li>";
        }
 
        // Fechar a lista UL

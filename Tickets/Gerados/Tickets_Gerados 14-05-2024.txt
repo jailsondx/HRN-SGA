@@ -1,0 +1,311 @@
+
+
+[14-05-2024 11-23-34]
+IP de Origem do Evento: ::1
+Ticket: Informações-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-49-23]
+IP de Origem do Evento: ::1
+Ticket: A-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-49-24]
+IP de Origem do Evento: ::1
+Ticket: V-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-49-25]
+IP de Origem do Evento: ::1
+Ticket: I-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-49-26]
+IP de Origem do Evento: ::1
+Ticket: AP-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-49-28]
+IP de Origem do Evento: ::1
+Ticket: DHO-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-49-29]
+IP de Origem do Evento: ::1
+Ticket: SESMT-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-49-31]
+IP de Origem do Evento: ::1
+Ticket: SC-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-49-32]
+IP de Origem do Evento: ::1
+Ticket: VA-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-49-33]
+IP de Origem do Evento: ::1
+Ticket: EX-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-49-35]
+IP de Origem do Evento: ::1
+Ticket: Informações-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-58-59]
+IP de Origem do Evento: ::1
+Ticket: A-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 11-58-59]
+IP de Origem do Evento: ::1
+Ticket: A-003
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 12-04-45]
+IP de Origem do Evento: ::1
+Ticket: A-004
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 12-04-45]
+IP de Origem do Evento: ::1
+Ticket: A-005
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 12-05-19]
+IP de Origem do Evento: ::1
+Ticket: A-6
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 12-43-20]
+IP de Origem do Evento: ::1
+Ticket: A-6
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 12-43-21]
+IP de Origem do Evento: ::1
+Ticket: A-6
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 12-43-21]
+IP de Origem do Evento: ::1
+Ticket: A-6
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 12-44-03]
+IP de Origem do Evento: ::1
+Ticket: A-7
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-16-18]
+IP de Origem do Evento: ::1
+Ticket: A-8
+Operação: Erro ao inserir novo registro: Incorrect integer value: '' for column 'numero' at row 1
+
+[14-05-2024 14-16-18]
+IP de Origem do Evento: ::1
+Ticket: A-8
+Operação: Erro ao inserir novo registro: Incorrect integer value: '' for column 'numero' at row 1
+
+[14-05-2024 14-16-35]
+IP de Origem do Evento: ::1
+Ticket: A-8
+Operação: Erro ao inserir novo registro: Incorrect integer value: '' for column 'numero' at row 1
+
+[14-05-2024 14-18-33]
+IP de Origem do Evento: ::1
+Ticket: A-8
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-18-35]
+IP de Origem do Evento: ::1
+Ticket: V-2
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-19-43]
+IP de Origem do Evento: ::1
+Ticket: A-9
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-20-00]
+IP de Origem do Evento: ::1
+Ticket: A-10
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-20-01]
+IP de Origem do Evento: ::1
+Ticket: A-11
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-20-22]
+IP de Origem do Evento: ::1
+Ticket: A-12
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-23-11]
+IP de Origem do Evento: ::1
+Ticket: A-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-50-02]
+IP de Origem do Evento: ::1
+Ticket: V-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-56-05]
+IP de Origem do Evento: ::1
+Ticket: V-2
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-56-12]
+IP de Origem do Evento: ::1
+Ticket: I-1
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-56-25]
+IP de Origem do Evento: ::1
+Ticket: I-2
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-56-37]
+IP de Origem do Evento: ::1
+Ticket: A-2
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-58-02]
+IP de Origem do Evento: ::1
+Ticket: A-3
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-59-41]
+IP de Origem do Evento: ::1
+Ticket: A-4
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 14-59-46]
+IP de Origem do Evento: ::1
+Ticket: V-3
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 15-00-12]
+IP de Origem do Evento: ::1
+Ticket: V-4
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 15-15-36]
+IP de Origem do Evento: ::1
+Ticket: V-5
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 15-17-55]
+IP de Origem do Evento: ::1
+Ticket: A-5
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 15-18-41]
+IP de Origem do Evento: ::1
+Ticket: AP-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-40]
+IP de Origem do Evento: ::1
+Ticket: A-006
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-41]
+IP de Origem do Evento: ::1
+Ticket: V-006
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-44]
+IP de Origem do Evento: ::1
+Ticket: DHO-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-45]
+IP de Origem do Evento: ::1
+Ticket: I-003
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-46]
+IP de Origem do Evento: ::1
+Ticket: AP-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-47]
+IP de Origem do Evento: ::1
+Ticket: SESMT-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-48]
+IP de Origem do Evento: ::1
+Ticket: SC-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-50]
+IP de Origem do Evento: ::1
+Ticket: VA-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-50]
+IP de Origem do Evento: ::1
+Ticket: AP-003
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-51]
+IP de Origem do Evento: ::1
+Ticket: EX-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 16-44-53]
+IP de Origem do Evento: ::1
+Ticket: Informações-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 19-41-40]
+IP de Origem do Evento: ::1
+Ticket: Informações-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 19-42-31]
+IP de Origem do Evento: ::1
+Ticket: INF-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 20-01-19]
+IP de Origem do Evento: ::1
+Ticket: A-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 20-01-21]
+IP de Origem do Evento: ::1
+Ticket: VA-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 20-01-24]
+IP de Origem do Evento: ::1
+Ticket: V-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 20-01-26]
+IP de Origem do Evento: ::1
+Ticket: I-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 20-01-26]
+IP de Origem do Evento: ::1
+Ticket: AP-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 20-01-29]
+IP de Origem do Evento: ::1
+Ticket: EX-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[14-05-2024 20-01-32]
+IP de Origem do Evento: ::1
+Ticket: INF-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!

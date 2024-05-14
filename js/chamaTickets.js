@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     function exibirTicket(tipo, guiche) {
 
-        if (guiche === null){
+        if ((guiche === null) || (guiche === '---') || (guiche === 'null')){
 
         // Exibe um alerta com a mensagem definida e o título 'Guiche'
         bootbox.alert({
@@ -37,22 +37,46 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 }
     $('#btnExibeTicketAcompanhante').click(function() {
-        exibirTicket('btnExibeTicketAcompanhante', recebeGuiche());
+        exibirTicket('A', recebeGuiche());
     });
 
     $('#btnExibeTicketVisitante').click(function() {
-        exibirTicket('btnExibeTicketVisitante', recebeGuiche());
+        exibirTicket('V', recebeGuiche());
+    });
+
+    $('#btnExibeInternacao').click(function() {
+        exibirTicket('I', recebeGuiche());
     });
 
     $('#btnExibeAtendimentoPrioritario').click(function() {
-        exibirTicket('btnExibeAtendimentoPrioritario', recebeGuiche());
+        exibirTicket('AP', recebeGuiche());
     });
 
-    $('#btnExibeOutros').click(function() {
-        exibirTicket('btnExibeOutros', recebeGuiche());
+    $('#btnExibeDHO').click(function() {
+        exibirTicket('DHO', recebeGuiche());
     });
 
+    $('#btnExibeSESMT').click(function() {
+        exibirTicket('SESMT', recebeGuiche());
+    });
 
+    $('#btnExibeSemCredencial').click(function() {
+        exibirTicket('SC', recebeGuiche());
+    });
+
+    $('#btnExibeVisitaAdministrativa').click(function() {
+        exibirTicket('VA', recebeGuiche());
+    });
+
+    $('#btnExibeExames').click(function() {
+        exibirTicket('EX', recebeGuiche());
+    });
+
+    $('#btnExibeInformacoes').click(function() {
+        exibirTicket('INF', recebeGuiche());
+    });
+
+    //Botões 'Especiais'
     $('#btnExibeTicketEmOrdem').click(function() {
         exibirTicket('btnExibeTicketEmOrdem', recebeGuiche());
     });

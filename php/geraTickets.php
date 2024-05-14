@@ -15,28 +15,46 @@ use Mike42\Escpos\EscposImage;
 date_default_timezone_set('America/Fortaleza');
 
 
-
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
     switch ($_POST['action']) {
         case 'A':
-            $tipo = 'Acompanhante';
+            $tipo = 'A';
             geraTicket($conn, $tipo);
             break;
         case 'V':
-            $tipo = 'Visitante';
+            $tipo = 'V';
+            geraTicket($conn, $tipo);
+            break;
+        case 'I':
+            $tipo = 'I';
             geraTicket($conn, $tipo);
             break;
         case 'AP':
-            $tipo = 'Atendimento Prioritario';
+            $tipo = 'AP';
+            geraTicket($conn, $tipo);
+            break;
+        case 'DHO':
+            $tipo = 'DHO';
+            geraTicket($conn, $tipo);
+            break;
+        case 'SESMT':
+            $tipo = 'SESMT';
+            geraTicket($conn, $tipo);
+            break;
+        case 'SC':
+            $tipo = 'SC';
+            geraTicket($conn, $tipo);
+            break;
+        case 'EX':
+            $tipo = 'EX';
             geraTicket($conn, $tipo);
             break;
         case 'VA':
-            $tipo = 'Visita Administrativa';
+            $tipo = 'VA';
             geraTicket($conn, $tipo);
             break;
-        case 'CE':
-            $tipo = 'Credencial Esquecida';
+        case 'INF':
+            $tipo = 'INF';
             geraTicket($conn, $tipo);
             break;
         default:
@@ -46,8 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
             exit;
     }
 }
-
-
 
 
 function geraTicket($conn, $tipo){
@@ -73,7 +89,7 @@ function geraTicket($conn, $tipo){
             if ($conn->query($sql_insert) === TRUE) {
                 $operacao = "Ticket Gerado, Novo registro inserido com sucesso!";
                 geraLogTicketGerados($tipo, $numero, $operacao);
-                //echo json_encode($tipo . '-' . $numero);
+                echo json_encode($tipo . '-' . formatarNumeroTicket($numero));
             } else {
                 $operacao = "Erro ao inserir novo registro: " . $conn->error;
                 geraLogTicketGerados($tipo, $numero, $operacao);
@@ -84,7 +100,7 @@ function geraTicket($conn, $tipo){
             // Insere o primeiro registro na tabela
             $sql_insert_primeiro = "INSERT INTO tickets (tipo, numero, estado, dia) VALUES ('$tipo', '$numero', '$estado', '$data')";
             if ($conn->query($sql_insert_primeiro) === TRUE) {
-                $operacao = "Primeor Ticket Gerado, Primeiro registro inserido com sucesso!";
+                $operacao = "Primeiro Ticket Gerado, Primeiro registro inserido com sucesso!";
                 geraLogTicketGerados($tipo, $numero, $operacao);
             } else {
                 $operacao = "Erro ao inserir primeiro registro: " . $conn->error;
@@ -94,13 +110,14 @@ function geraTicket($conn, $tipo){
 
     // Fecha a conexão com o banco de dados
     $conn->close();
-    imprimirTermica($tipo, $numero);
+    //imprimirTermica($tipo, $numero);
     //visualizar($tipo, $numero);
     //header("Location: ../pages/cliente.html");
 }
 
+function imprimirTermica($tipo, $numero_nao_formatado){
 
-function imprimirTermica($tipo, $numero){
+    $numero = formatarNumeroTicket($numero_nao_formatado);
 
     $hoje = date('d/m/Y H:i:s'); //H format 24h e h Format 12h
 

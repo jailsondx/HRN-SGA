@@ -1,5 +1,6 @@
 <?php
-include_once 'conexaoDB.php';
+require 'conexaoDB.php';
+require 'formataNumeroTicket.php';
 
 // DEFINE O FUSO HORARIO COMO O HORARIO DE BRASILIA
 date_default_timezone_set('America/Fortaleza');
@@ -12,12 +13,11 @@ $resultado = $conn->query($sql);
 if ($resultado->num_rows > 0) {
     // Retornar o tipo e o número do ticket
     $row = $resultado->fetch_assoc();
-    echo $row["tipo"] . " " . $row["numero"] . "," . $row["guiche"];
+    echo $row["tipo"] . " " . formatarNumeroTicket($row["numero"]) . "," . $row["guiche"];
 } else {
     echo "Nenhum ticket encontrado";
 }
 
 // Fechar a conexão com o banco de dados
 $conn->close();
-
 ?>

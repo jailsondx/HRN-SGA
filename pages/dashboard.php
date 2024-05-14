@@ -41,7 +41,7 @@
         <h1><b>Ticket em Atendimento</b></h1>
         <!-- Local onde o valor retornado do banco de dados será exibido -->
        <div id="ticketInfo"></div>
-       <div id="Guiche"></div>
+       
         <!-- Botão para chamar Tickets -->
         <div class="botoesSup">
           <button id='btnExibeTicketEmOrdem' type="button" class="btn btn-warning">Chamar Próximo</button>
@@ -50,8 +50,16 @@
         <div class="botoesInf">
           <button id='btnExibeTicketAcompanhante' type="button" class="btn btn-primary">Chamar Acompanhante</button>
           <button id='btnExibeTicketVisitante' type="button" class="btn btn-primary">Chamar Visitante</button>
-          <button id='btnExibeAtendimentoPrioritario' type="button" class="btn btn-primary">Atendimento Prioritario</button>
-          <button id='btnExibeOutros' type="button" class="btn btn-primary">Outros</button>
+          <button id='btnExibeInternacao' type="button" class="btn btn-primary">Chamar Internação</button>
+          <button id='btnExibeAtendimentoPrioritario' type="button" class="btn btn-primary">Chamar Atendimento Prioritario</button>
+          
+          <button id='btnExibeDHO' type="button" class="btn btn-primary">Chamar DHO</button>
+          <button id='btnExibeSESMT' type="button" class="btn btn-primary">Chamar SESMT</button>
+          <button id='btnExibeSemCredencial' type="button" class="btn btn-primary">Chamar Sem Credencial</button>
+          <button id='btnExibeVisitaAdministrativa' type="button" class="btn btn-primary">Chamar Visita Administrativa</button>
+          
+          <button id='btnExibeExames' type="button" class="btn btn-primary">Chamar Entrega de Exames</button>
+          <button id='btnExibeInformacoes' type="button" class="btn btn-primary">Chamar Informações</button>
         </div>
       </div>
       <div class="estatisticas">
@@ -59,16 +67,16 @@
         <div class="quadros">
           
           <div id="Q01">
-            <b>Atendimentos realizados hoje</b><br>
+            <span class="titulos_quadros"><b>Atendimentos realizados hoje</b></span><br>
             <span id="Q01-dados"></span>
           </div>
           
           <div id="Q02">TESTE 02</div>
           
           <div id="Q03">
-            <b>Guichê</b><br>
+          <span class="titulos_quadros"><b>Guichê</b></span><br>
             <select id="defineGuiche">
-              <option value="---">---</option>
+              <option value="null">---</option>
               <option value="Guiche 01">guichê 01</option>
               <option value="Guiche 02">guichê 02</option>
             </select>
