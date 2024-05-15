@@ -65,23 +65,27 @@ function displayResults_Estratificado(results) {
 //--------------------------------------------------------------------------------------------------------------------------------------
 // Função para contar ocorrências de palavras específicas
 function countWords(text, words) {
-    let totalCount = 0;
+    const wordCounts = {};
+    const lines = text.split('\n');
 
-    text.split('\n').forEach(line => {
+    lines.forEach(line => {
         words.forEach(word => {
-            const regex = new RegExp(`\\b${word}\\b`, 'gi');
+            const regex = new RegExp('\\b' + word + '\\b', 'gi');
             const matches = line.match(regex);
-            if (matches) totalCount += matches.length;
+            if (matches) {
+                wordCounts[word] = (wordCounts[word] || 0) + matches.length;
+            }
         });
     });
 
-    return totalCount;
+    return wordCounts;
 }
 
-// Função para exibir o resultado total na div "result"
-function displayTotalCount(totalCount) {
+// Função para exibir o total de contagens na div "result"
+function displayTotalCount(results) {
     const resultDiv = document.getElementById('Q01-dados');
-    const html = `
+    const totalCount = Object.values(results).reduce((sum, count) => sum + count, 0);
+    resultDiv.innerHTML = `
         <table>
             <tr>
                 <td id="td-ico">
@@ -93,19 +97,20 @@ function displayTotalCount(totalCount) {
             </tr>
         </table>
     `;
-    resultDiv.innerHTML = html;
 }
 //--------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
+
+
 //--------------------------------------------------------------------------------------------------------------------------------------
-// Função para obter a data atual no formato desejado
+// Função GETDATA
 function getDate() {
     const today = new Date();
     const year = today.getFullYear();
-    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, '0'); 
     const day = String(today.getDate()).padStart(2, '0');
     return `${day}-${month}-${year}`;
 }
@@ -125,9 +130,8 @@ async function updateInfo() {
 
 
 
-
 // Atualizar as informações imediatamente ao carregar a página
 updateInfo();
 
 // Atualizar as informações a cada 5 segundos
-setInterval(updateInfo, 5000);
+setInterval(updateInfo, 60000);

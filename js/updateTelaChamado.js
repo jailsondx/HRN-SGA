@@ -34,11 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     //Execute o BIPE mp3
                     executarBipe();
 
-                    // Falar o novo valor usando a API de Text-to-Speech
-                    falarTexto(novoTicket);
-                    falarTexto(guiche);
-
-                    //$('#Guiche').html(selectedOption);
+                    // Aguarde 2 segundos antes de executar o próximo código
+                    setTimeout(() => {
+                        // Falar o novo valor usando a API de Text-to-Speech
+                        falarTexto(novoTicket);
+                        falarTexto(guiche);
+                    }, 2000);
                 }
 
                 // Atualiza o conteúdo da div com o novo valor

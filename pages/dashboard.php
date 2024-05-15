@@ -71,14 +71,14 @@
             <span id="Q01-dados"></span>
           </div>
           
-          <div id="Q02">TESTE 02</div>
+          <div id="Q02">EM DESENVOLVIMENTO</div>
           
           <div id="Q03">
           <span class="titulos_quadros"><b>Guichê</b></span><br>
             <select id="defineGuiche">
               <option value="null">---</option>
-              <option value="Guiche 01">guichê 01</option>
-              <option value="Guiche 02">guichê 02</option>
+              <option value="Guiche 01">Guichê 01</option>
+              <option value="Guiche 02">Guichê 02</option>
             </select>
           </div>
 

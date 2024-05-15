@@ -67,8 +67,7 @@
         padding: 4vh;
       }
     #ticketChamado{
-        font-size: 5rem;
-        text-align: center;
+        font-size: 10rem;
     }
 }
 
@@ -116,7 +115,7 @@ body {
     flex-direction: column; /* Define a direção do layout como coluna */
     justify-content: center; /* Alinha os itens verticalmente ao centro */
     align-items: center; /* Alinha os itens horizontalmente ao centro */
-    white-space: wrap; /* Impede que o texto quebre */
+    white-space: nowrap; /* Impede que o texto quebre */
 }
 
 .left-column {
@@ -144,15 +143,18 @@ body {
 
 table{
     background-color: green;
-    border: 20px;
+   
+    margin-top: 20%;
     height: 100%;
     display: flex;
     justify-content: center;  /*Alinha os itens horizontalmente ao centro*/
 }
+
+
 th, td {
     background-color: #f0f0f0;
-    margin: 200px;
-    border: 200px;
+    width: 100vw;
+    text-align: center; /*Alinha os textos horizontalmente ao centro*/
     justify-content: center;  /*Alinha os itens horizontalmente ao centro*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   }

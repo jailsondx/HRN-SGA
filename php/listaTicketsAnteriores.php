@@ -27,7 +27,7 @@ function obterTicketsGerados($conn) {
        // Iterar sobre os resultados e adicionar cada um à saída HTML
        while ($row = $resultado->fetch_assoc()) {
             $html .= "<tr>";
-            $html .= "<td>" . $row["tipo"] . " " . formatarNumeroTicket($row["numero"]) . "</td>";
+            $html .= "<span class='TicketAnterior-Card'><td>" . $row["tipo"] . " " . formatarNumeroTicket($row["numero"]) . "</td></span>";
             $html .= "</tr>";
        }
 
