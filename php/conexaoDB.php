@@ -1,14 +1,8 @@
 <?php
-/*
-define('HOST', 'localhost');
-define('USER', 'root');
-define('PASS', '');
-define('DBNAME', 'hrn_SGS');
-*/
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "hrn_user";
+$password = "@isgh#nti01";
 $dbname = "hrn_sga";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
