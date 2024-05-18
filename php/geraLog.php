@@ -28,6 +28,17 @@ function geraLogTicketGerados($tipoTicket, $numero, $operacao){
     fclose($fp);
 }
 
+function geraLogTicketimpressos($operacao_impressao){
+    //função que escreve os tickets em txt
+    //Cria o log; se der erro na pasta dar acesso chmod 777
+    $hoje = date("d-m-Y");
+
+    $msg = "\n" . $operacao_impressao;
+    $fp = fopen("../Tickets/Gerados/Tickets_Gerados ".$hoje.".txt",'a+');
+    fwrite($fp,$msg); 
+    fclose($fp);
+}
+
 function geraLogTicketChamados($tipoTicket, $numero, $operacao, $guiche){
     //função que escreve os tickets em txt
     //Cria o log; se der erro na pasta dar acesso chmod 777

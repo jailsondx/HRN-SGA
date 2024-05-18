@@ -13,7 +13,7 @@ function formatarNumeroTicket($numero_nao_formatado) {
     if (strlen($numero_formatado) == 1) {
         return str_pad($numero_formatado, 3, '0', STR_PAD_LEFT); // Adiciona 2 zeros à esquerda
     } elseif (strlen($numero_formatado) == 2) {
-        return str_pad($numero_formatado, 2, '0', STR_PAD_LEFT); // Adiciona 1 zero à esquerda
+        return str_pad($numero_formatado, 3, '0', STR_PAD_LEFT); // Adiciona 1 zero à esquerda
     } else {
         return $numero_formatado; // Mantém o número como está
     }

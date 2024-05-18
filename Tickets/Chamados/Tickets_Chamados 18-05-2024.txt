@@ -1,0 +1,67 @@
+
+
+[18-05-2024 11-53-53]
+IP de Origem do Evento: ::1
+Ticket: AP-001
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[18-05-2024 11-53-56]
+IP de Origem do Evento: ::1
+Ticket: V-001
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[18-05-2024 11-54-01]
+IP de Origem do Evento: ::1
+Ticket: A-001
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[18-05-2024 11-54-05]
+IP de Origem do Evento: ::1
+Ticket: I-001
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[18-05-2024 11-54-07]
+IP de Origem do Evento: ::1
+Ticket: A-002
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[18-05-2024 11-54-10]
+IP de Origem do Evento: ::1
+Ticket: A-003
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[18-05-2024 11-54-18]
+IP de Origem do Evento: ::1
+Ticket: I-002
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[18-05-2024 11-54-24]
+IP de Origem do Evento: ::1
+Ticket: A-004
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[18-05-2024 11-54-27]
+IP de Origem do Evento: ::1
+Ticket: A-005
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[18-05-2024 11-54-28]
+IP de Origem do Evento: ::1
+Ticket: A-006
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[18-05-2024 11-54-29]
+IP de Origem do Evento: ::1
+Ticket: A-007
+Guiche: Guiche 02
+Operação: Chamado com sucesso!

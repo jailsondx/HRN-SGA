@@ -1,21 +1,66 @@
 
 
-[18-05-2024 09-35-50]
+[18-05-2024 11-56-03]
 IP de Origem do Evento: ::1
-Ticket: V-001
+Ticket: AP-007
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket AP-007 com sucesso!
+
+[18-05-2024 11-56-27]
+IP de Origem do Evento: ::1
+Ticket: AP-008
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket AP-008 com sucesso!
+
+[18-05-2024 11-56-33]
+IP de Origem do Evento: ::1
+Ticket: AP-009
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket AP-009 com sucesso!
+
+[18-05-2024 11-57-07]
+IP de Origem do Evento: ::1
+Ticket: I-016
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket I-016 com sucesso!
+
+[18-05-2024 11-59-47]
+IP de Origem do Evento: ::1
+Ticket: I-017
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket I-017 com sucesso!
+
+[18-05-2024 12-02-10]
+IP de Origem do Evento: ::1
+Ticket: A-061
 Operação: Ticket Gerado, Novo registro inserido com sucesso!
 
-[18-05-2024 09-35-50]
+[18-05-2024 12-03-06]
 IP de Origem do Evento: ::1
-Ticket: A-001
+Ticket: A-062
 Operação: Ticket Gerado, Novo registro inserido com sucesso!
 
-[18-05-2024 09-35-50]
+[18-05-2024 12-03-08]
 IP de Origem do Evento: ::1
-Ticket: I-001
+Ticket: V-012
 Operação: Ticket Gerado, Novo registro inserido com sucesso!
 
-[18-05-2024 09-35-50]
+[18-05-2024 12-03-23]
 IP de Origem do Evento: ::1
-Ticket: AP-001
+Ticket: I-018
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[18-05-2024 12-04-05]
+IP de Origem do Evento: ::1
+Ticket: I-019
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[18-05-2024 12-04-15]
+IP de Origem do Evento: ::1
+Ticket: I-020
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[18-05-2024 12-06-22]
+IP de Origem do Evento: ::1
+Ticket: A-063
 Operação: Ticket Gerado, Novo registro inserido com sucesso!

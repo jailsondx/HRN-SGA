@@ -1,5 +1,5 @@
 <?php
-ini_set('xdebug.default_enable', 0);
+header('Content-Type: application/json');
 
 require_once 'conexaoDB.php';
 require_once 'geraLog.php';
@@ -111,45 +111,44 @@ function geraTicket($conn, $tipo){
     // Fecha a conexão com o banco de dados
     $conn->close();
     //imprimirTermica($tipo, $numero);
+    //echo json_encode(imprimirTermica($tipo, $numero));
     //visualizar($tipo, $numero);
     //header("Location: ../pages/cliente.html");
 }
 
-function imprimirTermica($tipo, $numero_nao_formatado){
-
+function imprimirTermica($tipo, $numero_nao_formatado) {
     $numero = formatarNumeroTicket($numero_nao_formatado);
+    $hoje = date('d/m/Y H:i:s'); // H format 24h e h Format 12h
 
-    $hoje = date('d/m/Y H:i:s'); //H format 24h e h Format 12h
+        // Conector para a impressora (nesse exemplo, a impressora é um arquivo)
+        $connector = new NetworkPrintConnector("10.2.5.151", 9100);
 
-    // Conector para a impressora (nesse exemplo, a impressora é um arquivo)
-    $connector = new NetworkPrintConnector("10.2.5.1510",9100);
-
-    try {
         // Tente criar uma nova instância da classe Printer
         $printer = new Printer($connector);
 
         // Configurar a justificação do texto para centralizar
         $printer->setJustification(Printer::JUSTIFY_CENTER);
         $tux = EscposImage::load("../imgs/logo-hrn.png", false);
-        $printer -> bitImage($tux);
+        $printer->bitImage($tux);
 
         // Definir tamanho do texto = height & width
-        $printer -> selectPrintMode(Printer::MODE_EMPHASIZED);
+        $printer->selectPrintMode(Printer::MODE_EMPHASIZED);
 
-        $printer -> setTextSize(1, 1);
-        $printer -> text("\n");
+        $printer->setTextSize(1, 1);
+        $printer->text("\n");
         $printer->feed(3);
 
-        $printer -> setTextSize(2, 2);
-        $printer -> text($tipo."-".$numero);
+        $printer->setTextSize(2, 2);
+        $printer->text($tipo . "-" . $numero);
         $printer->feed(5);
 
-        $printer -> setTextSize(1, 1);
-        $printer -> text($hoje);
-        $printer -> text("\nHospital mantido com recursos publicos, sem fins lucrativos");
+        $printer->setTextSize(1, 1);
+        $printer->text($hoje);
+        $printer->feed(1);
+        $printer->text("\nHospital mantido com\nrecursos publicos\nsem fins lucrativos");
         $printer->feed(3);
-        
-        $printer -> selectPrintMode(); // Reset
+
+        $printer->selectPrintMode(); // Reset
 
         // Corte o papel
         $printer->cut();
@@ -157,18 +156,11 @@ function imprimirTermica($tipo, $numero_nao_formatado){
         // Feche a conexão com a impressora
         $printer->close();
 
-        //Gera Log de Impressão
-        $operacao = "Impressão do ticket ".$tipo."-".$numero." com sucesso!";
-        geraLog($tipo, $numero, $operacao);
+        // Gera Log de Impressão
+        $operacao_impressao = "Impressão do ticket " . $tipo . "-" . $numero . " com sucesso!";
+        geraLogTicketImpressos($operacao_impressao);
 
-        // Retorne um JSON indicando sucesso
-        //echo json_encode(array("success" => true, "message" => $operacao));
-        echo ("success");
-    } catch (Exception $e) {
-        // Se ocorrer uma exceção ao tentar imprimir, retorne um JSON indicando o erro
-        //echo json_encode(array("success" => false, "message" => "Erro ao imprimir: " . $e->getMessage()));
-        echo ("Erro ao imprimir: ");
-    }
 }
+
 
 ?>

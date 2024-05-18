@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             error: function(xhr, status, error) {
                 // Trata erros de requisição AJAX
-                console.error('geraTickets.js: ' + xhr.responseText);
+                console.error('ERROR: geraTickets.js (Resposta recebida do geraTickets.php): ' + xhr.responseText);
             }
         });
     }
