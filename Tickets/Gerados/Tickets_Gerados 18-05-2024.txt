@@ -1,0 +1,21 @@
+
+
+[18-05-2024 09-35-50]
+IP de Origem do Evento: ::1
+Ticket: V-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[18-05-2024 09-35-50]
+IP de Origem do Evento: ::1
+Ticket: A-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[18-05-2024 09-35-50]
+IP de Origem do Evento: ::1
+Ticket: I-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[18-05-2024 09-35-50]
+IP de Origem do Evento: ::1
+Ticket: AP-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!

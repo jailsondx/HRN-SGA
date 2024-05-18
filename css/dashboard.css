@@ -11,7 +11,7 @@
 
 /* Estilos gerais */
 body {
-  background-color: #f0f0f0;
+  background-color: #e1dbdb;
   font-family: 'Poppins-Regular', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -48,8 +48,8 @@ table, tr, td {
   height: 60vh;
   border-radius: 2rem;
   border-top: 2vh solid;
-  border-color: #009993;
-  background-color: white;
+  border-color: #0d6a5e;
+  background-color: #f0f0f0;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -61,7 +61,7 @@ table, tr, td {
   margin: 10px;
   height: 30vh;
   border-radius: 2rem;
-  background-color: white;
+  background-color: #f0f0f0;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -99,7 +99,7 @@ table, tr, td {
 #defineGuiche {
   text-align: center;
   color: #f0f0f0;
-  background-color: rgb(70, 70, 70);
+  background-color: #0d6a5e;
   margin-top: 8%;
   border: none;
   width: 70%;
@@ -107,8 +107,8 @@ table, tr, td {
 }
 
 .right-column {
-  width: 20vw;
-  background-color: white;
+  width: 15vw;
+  background-color: #f0f0f0;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
@@ -125,18 +125,24 @@ table, tr, td {
 }
 
 .botoesInf {
+  margin-top: 2%;
   width: 100%;
 }
 
-.btn {
-  margin: 0.2%;
+.btn, 
+.btn-success {
   padding: 1%;
   font-size: 80%;
+  margin: 0.2%;
+}
+
+.btn-success {
+  background-color: #0d6a5e;
 }
 
 .btn:hover {
-  color: black;
-  background-color: yellowgreen;
+  color: whitesmoke;
+  background-color: #16b1a1;
   transform: scale(1.1);
 }
 
@@ -144,9 +150,22 @@ table, tr, td {
   transform: scale(0.90);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsividade para diferentes dispositivos */
 
-/* Celulares */
+/* Celulares ------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   #ticketInfo {
     overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
@@ -165,9 +184,18 @@ table, tr, td {
     margin-top: 0%;
     height: 5vh;
   }
+  .right-column {
+    font-size: 0.5rem;
+  }
+  .titulo-right-column{
+    font-size: 1rem;
+  }
 }
 
-/* Tablets */
+
+
+
+/* Tablets ------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   #ticketInfo {
     overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
@@ -176,9 +204,19 @@ table, tr, td {
   .estatisticas {
     height: 20vh;
   }
+  .right-column {
+    font-size: 0.7rem;
+  }
+  .titulo-right-column{
+    font-size: 1.5rem;
+  }
 }
 
-/* Computadores */
+
+
+
+
+/* Computadores ------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1024px) {
   #ticketInfo {
     overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite do container */
@@ -187,9 +225,19 @@ table, tr, td {
     height: 20%;
     margin: 2%;
   }
+  .right-column {
+    font-size: 1rem;
+  }
+  .titulo-right-column{
+    font-size: 2rem;
+  }
 }
 
-/* Computadores com altura máxima de 500px */
+
+
+
+
+/* Computadores com altura máxima de 500px ------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-height: 500px) {
   .estatisticas {
     display: none;

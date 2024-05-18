@@ -178,7 +178,7 @@ function repeteTicket($conn, $tipoTicketChamado){
         if ($result->num_rows > 0) {
             // Retorne o primeiro ID encontrado
             $row = $result->fetch_assoc();
-            $tipo_ticket = $row["tipo"] . " -";
+            $tipo_ticket = $row["tipo"] . ".";
             $numero_ticket = $row["numero"];
 
             $sql_update_atual = "UPDATE atual SET tipo='$tipo_ticket', numero='$numero_ticket' WHERE id = 1";

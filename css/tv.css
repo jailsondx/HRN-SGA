@@ -136,14 +136,12 @@ body {
 
 .right-column {
     flex: 1; /* Ajusta a proporção da coluna da direita */
-    background-color: #ccc;
+    background-color: #cccccc;
     padding: 20px;
     height: 85vh;
 }
 
 table{
-    background-color: green;
-   
     margin-top: 20%;
     height: 100%;
     display: flex;

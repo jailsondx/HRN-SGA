@@ -1,0 +1,6 @@
+Verde escuro: #0d6a5e;
+Verde claro: #16b1a1;
+
+Cinza Claro (Background, Body): #e1dbdb
+Cinza Escuro (Coluna): #cccccc
+Branco não absoluto: #f0f0f0

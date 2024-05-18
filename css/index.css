@@ -1,0 +1,52 @@
+/* Definindo a animação */
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Começa ligeiramente acima */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Termina na posição original */
+    }
+  }
+
+  
+
+body{
+    background-color: whitesmoke;
+}
+
+.logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-central{
+    margin-top: 7%;
+    height: 50vh;
+}
+
+.botoes{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    font-size: 2rem;
+    margin: 1%;
+    margin-top: 2%;
+    width: 10%;
+    background-color: #0d6a5e;
+    color: whitesmoke;
+
+    animation: fadeInDown 2s ease-in-out; /* Duração e curva de animação */
+}
+
+.btn:hover{
+    background-color: #16b1a1;
+    scale: 1.1;
+}
