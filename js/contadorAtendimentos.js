@@ -46,7 +46,7 @@ function displayResults_Estratificado(results) {
         <table>
             <tr>
                 <td id="td-ico">
-                    <img src="../imgs/silhueta-do-grupo-de-usuarios.png" id="icons-estatisticas">
+                    <img src="../imgs/icone_quantidade.png" id="icons-estatisticas">
                 </td>
                 <td>
                     ${Object.entries(results).map(([word, count]) => `${word}: ${count}`).join('<br>')}
@@ -89,7 +89,7 @@ function displayTotalCount(results) {
         <table>
             <tr>
                 <td id="td-ico">
-                    <img src="../imgs/silhueta-do-grupo-de-usuarios.png" id="icons-estatisticas">
+                    <img src="../imgs/icone_quantidade.png" id="icons-estatisticas">
                 </td>
                 <td>
                     ${totalCount}

@@ -9,6 +9,18 @@
   src: url('../font/poppins/Poppins-Bold.ttf') format('truetype');
 }
 
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes moveLeftRight {
+  0% { transform: translate(-100%, -50%); }
+  100% { transform: translate(100%, -50%); }
+}
+
+
 /* Estilos gerais */
 body {
   background-color: #e1dbdb;
@@ -70,10 +82,11 @@ table, tr, td {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 50%;
+  height: 60%;
   justify-content: center;
   align-items: center;
 }
+
 
 #Q01, #Q02, #Q03 {
   font-size: 0.8rem;
@@ -87,14 +100,18 @@ table, tr, td {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#Q01-dados {
-  font-size: 3rem;
+#img_tempo{
+  width: 30%;
+  /*animation: fadeInOut 6s ease-in-out infinite, moveLeftRight 6s linear infinite;*/
 }
+
 
 #icons-estatisticas {
   max-width: 50%;
   max-height: 50%;
 }
+
+
 
 #defineGuiche {
   text-align: center;
@@ -177,7 +194,7 @@ table, tr, td {
   .estatisticas {
     height: 10vh;
   }
-  h3, #Q01, #Q02, .titulos_quadros {
+  h3, #Q01, #Q02, .titulos-quadros {
     display: none;
   }
   #defineGuiche {
@@ -204,11 +221,17 @@ table, tr, td {
   .estatisticas {
     height: 20vh;
   }
+  .titulos-quadros {
+    font-size: 0.6rem;
+  }
   .right-column {
     font-size: 0.7rem;
   }
   .titulo-right-column{
     font-size: 1.5rem;
+  }
+  #Q01-dados {
+    font-size: 1rem;
   }
 }
 
@@ -225,11 +248,27 @@ table, tr, td {
     height: 20%;
     margin: 2%;
   }
+
+  .titulos-quadros {
+    font-size: 1.2rem;
+  }
+
   .right-column {
     font-size: 1rem;
   }
+
   .titulo-right-column{
     font-size: 2rem;
+  }
+
+  .titulo-left-column{
+    margin-top: -2%;
+    margin-bottom: 1%;
+    font-size: 2rem;
+  }
+
+  #Q01-dados {
+    font-size: 3rem;
   }
 }
 

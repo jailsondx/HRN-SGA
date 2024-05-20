@@ -34,6 +34,8 @@
     <script type="module" src="../js/contadorAtendimentos.js"></script>
     <script type="module" src="../js/defineGuiche.js"></script>
 
+    <!-- <script type="module" src="../js/apiTempo.js"></script> -->
+
 <div class="container">
 
   <div class="left-column">
@@ -63,18 +65,24 @@
         </div>
       </div>
       <div class="estatisticas">
-        <h3>Estatisticas</h3>
+      <div class="titulo-left-column"><b>Estatisticas</b></div>
         <div class="quadros">
           
           <div id="Q01">
-            <span class="titulos_quadros"><b>Atendimentos realizados hoje</b></span><br>
+            <span class="titulos-quadros"><b>Atendimentos realizados hoje</b></span><br>
             <span id="Q01-dados"></span>
           </div>
           
-          <div id="Q02">EM DESENVOLVIMENTO</div>
+          <div id="Q02">
+          <!--
+           <span class="titulos-quadros"><b>Sobral - CE </b></span>
+           <div id="weather-info"></div>
+           <img src="../imgs/icone_tempo.png" id="img_tempo">
+          -->
+          </div>
           
           <div id="Q03">
-          <span class="titulos_quadros"><b>Guichê</b></span><br>
+          <span class="titulos-quadros"><b>Guichê</b></span><br>
             <select id="defineGuiche">
               <option value="null">---</option>
               <option value="Guiche 01">Guichê 01</option>

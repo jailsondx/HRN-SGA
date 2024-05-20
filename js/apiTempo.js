@@ -7,38 +7,70 @@ const apiKey = 'ZNqSOZcALTobUAISCOK3QxZYw7SCGg0Y';
 // Construa a URL da solicitação para obter as condições climáticas atuais
 const currentConditionsUrl = `http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apiKey}&details=true`;
 
-// Faça a solicitação para obter as condições climáticas atuais
-fetch(currentConditionsUrl)
-    .then(response => {
-        // Verifique se a resposta está OK (status 200)
+ // Dicionário de tradução
+ const translationDictionary = {
+    "Sunny": "Ensolarado",
+    "Partly sunny": "Parcialmente ensolarado",
+    "Cloudy": "Nublado",
+    "Some clouds": "Algumas nuvens",
+    "Rain": "Chuva",
+    "Clear": "Limpo",
+    "Partly cloudy": "Parcialmente nublado",
+    // Adicione mais traduções conforme necessário
+};
+
+// Função para traduzir o texto das condições climáticas
+function translateWeatherText(weatherText) {
+    return translationDictionary[weatherText] || weatherText;
+}
+
+// Função para obter as condições climáticas atuais
+async function getCurrentConditions() {
+    try {
+        const response = await fetch(currentConditionsUrl);
         if (!response.ok) {
-            throw new Error('Erro ao buscar os dados da AccuWeather');
+            throw new Error(`Erro na solicitação: ${response.status}`);
         }
-        // Converta a resposta para JSON
-        return response.json();
-    })
-    .then(data => {
-        // Verifique se há resultados
-        if (data.length === 0) {
-            console.error('Não foi possível obter as condições climáticas atuais.');
-            return;
-        }
+        const data = await response.json();
+        
+        // Tratar os dados
+        const weather = data[0];
+        const localObservationTime = weather.LocalObservationDateTime;
+        const weatherText = translateWeatherText(weather.WeatherText);
+        const hasPrecipitation = weather.HasPrecipitation;
+        const isDayTime = weather.IsDayTime;
+        const temperatureMetric = weather.Temperature.Metric.Value;
+        const temperatureImperial = weather.Temperature.Imperial.Value;
+        const mobileLink = weather.MobileLink;
+        const link = weather.Link;
 
-        // Exiba as informações de condições climáticas atuais na página
-        const weatherInfo = data[0];
-        document.getElementById("weather-info").innerHTML = 
-            "<h2>Sobral, CE</h2>"+
-            "<p>Temperatura: ${weatherInfo.Temperature.Metric.Value} ${weatherInfo.Temperature.Metric.Unit}</p>"+
-            "<p>Clima: ${weatherInfo.WeatherText}</p>";
-    })
-    .catch(error => {
-        console.error('Erro ao buscar os dados da AccuWeather:', error);
-        //alert('Erro ao buscar os dados da AccuWeather. Por favor, tente novamente mais tarde.');
-        document.getElementById("weather-info").innerHTML = 
-            "<h2>Sobral, CE</h2>"+
-            "<p>Temperatura: --</p>"+
-            "<p>Clima: ---</p>";
-    });
+        // Atualizar a div com ID 'weather-info'
+        const weatherInfoDiv = document.getElementById('weather-info');
+        weatherInfoDiv.innerHTML = `
+            <strong>Temperatura:</strong> ${temperatureMetric}°C<br>
+            <strong>Condições Climáticas:</strong> ${weatherText}<br>
+            <strong>Precipitação:</strong> ${hasPrecipitation ? 'Sim' : 'Não'}</br>
+            <strong>Período do Dia:</strong> ${isDayTime ? 'Diurno' : 'Noturno'}
+
+        `;
+    } catch (error) {
+        console.error('Erro ao obter as condições climáticas:', error);
+    }
+}
+  
+  // Chamar a função para obter as condições climáticas
+  getCurrentConditions();
 
 
-    //<p>Última atualização: ${new Date(weatherInfo.LocalObservationDateTime).toLocaleString()}</p>
+/*
+  const weatherInfoDiv = document.getElementById('weather-info');
+  weatherInfoDiv.innerHTML = `
+      <p><strong>Data e Hora da Observação Local:</strong> ${localObservationTime}</p>
+      <p><strong>Condições Climáticas:</strong> ${weatherText}</p>
+      <p><strong>Precipitação:</strong> ${hasPrecipitation ? 'Sim' : 'Não'}</p>
+      <p><strong>Período do Dia:</strong> ${isDayTime ? 'Diurno' : 'Noturno'}</p>
+      <p><strong>Temperatura:</strong> ${temperatureMetric}°C (${temperatureImperial}°F)</p>
+      <p><a href="${mobileLink}" target="_blank">Link para Mobile</a></p>
+      <p><a href="${link}" target="_blank">Link para Web</a></p>
+  `;
+  */
