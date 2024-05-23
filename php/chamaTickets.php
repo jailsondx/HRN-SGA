@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: application/json');
 
 require_once "conexaoDB.php";
 require_once "geraLog.php";
@@ -27,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["tipo"]) && isset($_POS
         case "SESMT":
             buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
             break;
-        case "SC":
+        case "EC":
             buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
             break;
         case "VA":
@@ -39,13 +40,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["tipo"]) && isset($_POS
         case "INF":
             buscarTicketEAtualizarEstado($conn, $_POST["tipo"], $_POST["guiche"]);
             break;
-        case "btnExibeTicketEmOrdem":
+        case "btnChamaTicketEmOrdem":
             //$tipoTicketChamado = "ORDEM";
             buscarTicketEmOrdem($conn, $_POST["guiche"]);
             break;
         case "btnRepeteUltimo":
-            $tipoTicketChamado = "REPETIR";
-            repeteTicket($conn, $tipoTicketChamado);
+            repeteTicket($conn);
             break;
         default:
             // Responda com um erro se a ação não for reconhecida
@@ -104,9 +104,9 @@ function buscarTicketEAtualizarEstado($conn, $tipoTicketChamado, $guiche){
         }
     } else {
         // Se não houver acompanhantes com estado 'GERADO', envie uma resposta indicando que não há acompanhantes disponíveis
-        echo "Não há tickets do tipo " .
+        echo json_encode( "Não há tickets do tipo " .
             $tipoTicketChamado .
-            " esperando atendimento.";
+            " esperando atendimento.");
     }
 
     // Feche a conexão com o banco de dados
@@ -162,15 +162,14 @@ function buscarTicketEmOrdem($conn, $guiche){
         }
     } else {
         // Se não houver acompanhantes com estado 'GERADO', envie uma resposta indicando que não há acompanhantes disponíveis
-        echo "Não há tickets esperando atendimento.";
+        echo json_encode("Não há tickets esperando atendimento.");
     }
 
     // Feche a conexão com o banco de dados
     $conn->close();
 }
 
-function repeteTicket($conn, $tipoTicketChamado){
-    if ($tipoTicketChamado === "REPETIR") {
+function repeteTicket($conn){
         $sql = "SELECT * FROM atual WHERE id = 1";
         $result = $conn->query($sql);
 
@@ -197,18 +196,10 @@ function repeteTicket($conn, $tipoTicketChamado){
                         "Erro ao atualizar o estado do registro no banco de dados (function repeteTicket): " .
                         $conn->error,
                 ]);
-                //Gera Log da Chamada
-                /*$operacao = json_encode([
-                    "error" =>
-                        "Erro ao atualizar o estado do registro no banco de dados (function repeteTicket): " .
-                        $conn->error,
-                ]);*/
-                //geraLog($tipo_ticket, $numero_ticket, $operacao);
             }
+        }else {
+            echo json_encode("Não há tickets");
         }
-    } else {
-        echo "Não há tickets do tipo";
-    }
     // Feche a conexão com o banco de dados
     $conn->close();
 }

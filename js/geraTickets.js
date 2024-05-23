@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "totem.html";
     });
     
-    $('#SC').click(function() {
-        exibirTicket('SC');
+    $('#EC').click(function() {
+        exibirTicket('EC');
         window.location.href = "totem.html";
     });
 

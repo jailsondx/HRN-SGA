@@ -36,10 +36,13 @@ body{
 }
 
 .btn{
-    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
     margin: 1%;
     margin-top: 2%;
-    width: 10%;
+    width: 12%;
     background-color: #0d6a5e;
     color: whitesmoke;
 

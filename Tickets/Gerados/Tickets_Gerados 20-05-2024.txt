@@ -1,0 +1,11 @@
+
+
+[20-05-2024 16-53-32]
+IP de Origem do Evento: ::1
+Ticket: A-064
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[20-05-2024 16-53-32]
+IP de Origem do Evento: ::1
+Ticket: A-065
+Operação: Ticket Gerado, Novo registro inserido com sucesso!

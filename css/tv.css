@@ -61,7 +61,7 @@
         font-size: 2.5rem;
     }
     .right-column{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     th, td {
         padding: 4vh;
@@ -135,17 +135,31 @@ body {
 }
 
 .right-column {
-    flex: 1; /* Ajusta a proporção da coluna da direita */
+    display: flex; /* Torna as colunas flexíveis */
+    flex-direction: column; /* Define a direção do layout como coluna */
+    justify-content: center; /* Alinha os itens verticalmente ao centro */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+    text-align: center; /* Alinha os textos horizontalmente ao centro */
+    white-space: wrap; /* Impede que o texto quebre */
+    width: 15vw;
     background-color: #cccccc;
     padding: 20px;
     height: 85vh;
 }
+#ticketsAnteriores{
+    display: flex; /* Torna as colunas flexíveis */
+    flex-direction: column; /* Define a direção do layout como coluna */
+    justify-content: center; /* Alinha os itens verticalmente ao centro */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+    white-space: nowrap; /* Impede que o texto quebre */
+}
 
 table{
-    margin-top: 20%;
+    margin-top: 10%;
     height: 100%;
-    display: flex;
+    width: 100%;
     justify-content: center;  /*Alinha os itens horizontalmente ao centro*/
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
 }
 
 

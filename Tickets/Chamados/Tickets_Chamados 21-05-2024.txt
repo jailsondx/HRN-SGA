@@ -1,0 +1,278 @@
+
+
+[21-05-2024 09-58-13]
+Hostname: NTI-5
+IP de Origem do Evento: ::1
+Ticket: A-014
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 09-58-15]
+Hostname: NTI-5
+IP de Origem do Evento: ::1
+Ticket: I-003
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 09-58-16]
+Hostname: NTI-5
+IP de Origem do Evento: ::1
+Ticket: A-015
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 09-59-13]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-016
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 09-59-40]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: V-002
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 09-59-41]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-017
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 09-59-41]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-018
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 10-20-24]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-021
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 10-20-24]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-022
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 10-21-23]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-023
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 10-21-29]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-024
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 10-22-13]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-025
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 10-22-13]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-026
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 10-22-13]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: V-003
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 10-22-13]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-027
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 10-33-06]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-028
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 11-18-39]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-029
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 11-18-39]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-033
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 11-18-39]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-030
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-02-54]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-034
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-03-30]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: EC-001
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-11-48]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-035
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-11-55]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-036
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-12-12]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-037
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-12-21]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: V-004
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-12-29]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: I-005
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-12-46]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: I-006
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-12-47]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: AP-005
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-12-48]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: I-007
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-12-52]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: VA-002
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-14-22]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-038
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-14-33]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: AP-006
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-14-33]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: I-008
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-14-34]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: V-005
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[21-05-2024 16-14-34]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-039
+Guiche: Guiche 01
+Operação: Chamado com sucesso!

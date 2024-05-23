@@ -1,0 +1,17 @@
+
+
+[21-05-2024 11-20-48]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: VA-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket VA-002 com sucesso!
+
+[21-05-2024 15-59-40]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: EC-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket EC-001 com sucesso!

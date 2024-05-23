@@ -41,8 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
             $tipo = 'SESMT';
             geraTicket($conn, $tipo);
             break;
-        case 'SC':
-            $tipo = 'SC';
+        case 'EC':
+            $tipo = 'EC';
             geraTicket($conn, $tipo);
             break;
         case 'EX':
@@ -121,7 +121,7 @@ function imprimirTermica($tipo, $numero_nao_formatado) {
     $hoje = date('d/m/Y H:i:s'); // H format 24h e h Format 12h
 
         // Conector para a impressora (nesse exemplo, a impressora é um arquivo)
-        $connector = new NetworkPrintConnector("10.2.5.151", 9100);
+        $connector = new NetworkPrintConnector("10.2.4.50", 9100);
 
         // Tente criar uma nova instância da classe Printer
         $printer = new Printer($connector);

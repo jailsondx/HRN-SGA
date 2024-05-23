@@ -1,3 +1,9 @@
+/*
+    justify-content: center;  Alinha os itens horizontalmente ao centro 
+    align-items: center;  Alinha os itens verticalmente ao centro 
+    text-align: center;  Alinha o texto horizontalmente 
+*/
+
 /* Importação de fontes */
 @font-face {
   font-family: 'Poppins-Regular';
@@ -100,15 +106,18 @@ table, tr, td {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+#Q02{
+  display: none;
+}
+
 #img_tempo{
   width: 30%;
   /*animation: fadeInOut 6s ease-in-out infinite, moveLeftRight 6s linear infinite;*/
 }
 
 
-#icons-estatisticas {
-  max-width: 50%;
-  max-height: 50%;
+#icon-estatisticas {
+  max-width: 40%;
 }
 
 
@@ -124,10 +133,22 @@ table, tr, td {
 }
 
 .right-column {
+  height: 100vh;
   width: 15vw;
   background-color: #f0f0f0;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 2%;
+}
+
+#tickets{
+  margin-top: 2vh;
+  height: 75vh;
+}
+
+.version{
+  font-size: 0.8rem;
+  height: 3vh;
+  text-align: right;
 }
 
 .botoesSup, .botoesInf {

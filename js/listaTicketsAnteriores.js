@@ -4,7 +4,6 @@ function listaTicketsGerados() {
         method: 'GET',
         success: function(data) {
             $('#ticketsAnteriores').html(data); // Atualiza o conteúdo da div com a lista de tickets gerados
-            console.log("Cade");
         },
         error: function(xhr, status, error) {
             console.error('Erro ao obter tickets gerados:', error); // Exibe erro no console em caso de falha

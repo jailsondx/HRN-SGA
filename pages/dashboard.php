@@ -46,22 +46,22 @@
        
         <!-- Botão para chamar Tickets -->
         <div class="botoesSup">
-          <button id='btnExibeTicketEmOrdem' type="button" class="btn btn-warning">Chamar Próximo</button>
+          <button id='btnChamaTicketEmOrdem' type="button" class="btn btn-warning">Chamar Próximo</button>
           <button id='btnRepeteUltimo' type="button" class="btn btn-secondary">Chamar Novamente o Ultimo</button>
         </div>
         <div class="botoesInf">
-          <button id='btnExibeTicketAcompanhante' type="button" class="btn btn-success">Chamar Acompanhante</button>
-          <button id='btnExibeTicketVisitante' type="button" class="btn btn-success">Chamar Visitante</button>
-          <button id='btnExibeInternacao' type="button" class="btn btn-success">Chamar Internação</button>
-          <button id='btnExibeAtendimentoPrioritario' type="button" class="btn btn-success">Chamar Atendimento Prioritario</button>
+          <button id='btnChamaTicketAcompanhante' type="button" class="btn btn-success">Chamar Acompanhante</button>
+          <button id='btnChamaTicketVisitante' type="button" class="btn btn-success">Chamar Visitante</button>
+          <button id='btnChamaInternacao' type="button" class="btn btn-success">Chamar Internação</button>
+          <button id='btnChamaAtendimentoPrioritario' type="button" class="btn btn-success">Chamar Atendimento Prioritario</button>
           
-          <button id='btnExibeDHO' type="button" class="btn btn-success">Chamar DHO</button>
-          <button id='btnExibeSESMT' type="button" class="btn btn-success">Chamar SESMT</button>
-          <button id='btnExibeSemCredencial' type="button" class="btn btn-success">Chamar Sem Credencial</button>
-          <button id='btnExibeVisitaAdministrativa' type="button" class="btn btn-success">Chamar Visita Administrativa</button>
+          <button id='btnChamaDHO' type="button" class="btn btn-success">Chamar DHO</button>
+          <button id='btnChamaSESMT' type="button" class="btn btn-success">Chamar SESMT</button>
+          <button id='btnChamaEsquecimentoCracha' type="button" class="btn btn-success">Chamar Esquecimento de Crachá</button>
+          <button id='btnChamaVisitaAdministrativa' type="button" class="btn btn-success">Chamar Visita Administrativa</button>
           
-          <button id='btnExibeExames' type="button" class="btn btn-success">Chamar Entrega de Exames</button>
-          <button id='btnExibeInformacoes' type="button" class="btn btn-success">Chamar Informações</button>
+          <button id='btnChamaExames' type="button" class="btn btn-success">Chamar Entrega de Exames</button>
+          <button id='btnChamaInformacoes' type="button" class="btn btn-success">Chamar Informações</button>
         </div>
       </div>
       <div class="estatisticas">
@@ -96,9 +96,9 @@
   </div>
         
   <div class="right-column">
-          <div class="titulo-right-column"><b>Próximos Tickets</b></div>
-        <div id="tickets"> <!-- Aqui será exibida a lista de tickets gerados --> </div>
-
+    <div class="titulo-right-column"><b>Próximos Tickets</b></div>
+    <div id="tickets"> <!-- Aqui será exibida a lista de tickets gerados --> </div>
+    <div class="version">v1.1</div>
   </div>
 
 </div><!--FIM DIV CONTAINER-->

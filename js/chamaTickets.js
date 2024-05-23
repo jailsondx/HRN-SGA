@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    function exibirTicket(tipo, guiche) {
+    function chamarTicket(tipo, guiche) {
 
         if ((guiche === null) || (guiche === '---') || (guiche === 'null')){
 
@@ -36,53 +36,53 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 }
-    $('#btnExibeTicketAcompanhante').click(function() {
-        exibirTicket('A', recebeGuiche());
+    $('#btnChamaTicketAcompanhante').click(function() {
+        chamarTicket('A', recebeGuiche());
     });
 
-    $('#btnExibeTicketVisitante').click(function() {
-        exibirTicket('V', recebeGuiche());
+    $('#btnChamaTicketVisitante').click(function() {
+        chamarTicket('V', recebeGuiche());
     });
 
-    $('#btnExibeInternacao').click(function() {
-        exibirTicket('I', recebeGuiche());
+    $('#btnChamaInternacao').click(function() {
+        chamarTicket('I', recebeGuiche());
     });
 
-    $('#btnExibeAtendimentoPrioritario').click(function() {
-        exibirTicket('AP', recebeGuiche());
+    $('#btnChamaAtendimentoPrioritario').click(function() {
+        chamarTicket('AP', recebeGuiche());
     });
 
-    $('#btnExibeDHO').click(function() {
-        exibirTicket('DHO', recebeGuiche());
+    $('#btnChamaDHO').click(function() {
+        chamarTicket('DHO', recebeGuiche());
     });
 
-    $('#btnExibeSESMT').click(function() {
-        exibirTicket('SESMT', recebeGuiche());
+    $('#btnChamaSESMT').click(function() {
+        chamarTicket('SESMT', recebeGuiche());
     });
 
-    $('#btnExibeSemCredencial').click(function() {
-        exibirTicket('SC', recebeGuiche());
+    $('#btnChamaEsquecimentoCracha').click(function() {
+        chamarTicket('EC', recebeGuiche());
     });
 
-    $('#btnExibeVisitaAdministrativa').click(function() {
-        exibirTicket('VA', recebeGuiche());
+    $('#btnChamaVisitaAdministrativa').click(function() {
+        chamarTicket('VA', recebeGuiche());
     });
 
-    $('#btnExibeExames').click(function() {
-        exibirTicket('EX', recebeGuiche());
+    $('#btnChamaExames').click(function() {
+        chamarTicket('EX', recebeGuiche());
     });
 
-    $('#btnExibeInformacoes').click(function() {
-        exibirTicket('INF', recebeGuiche());
+    $('#btnChamaInformacoes').click(function() {
+        chamarTicket('INF', recebeGuiche());
     });
 
     //Botões 'Especiais'
-    $('#btnExibeTicketEmOrdem').click(function() {
-        exibirTicket('btnExibeTicketEmOrdem', recebeGuiche());
+    $('#btnChamaTicketEmOrdem').click(function() {
+        chamarTicket('btnChamaTicketEmOrdem', recebeGuiche());
     });
 
     $('#btnRepeteUltimo').click(function() {
-        exibirTicket('btnRepeteUltimo', recebeGuiche());
+        chamarTicket('btnRepeteUltimo', recebeGuiche());
     });
     
 });

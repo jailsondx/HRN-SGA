@@ -2,7 +2,7 @@
 const filePath = `../Tickets/Chamados/Tickets_Chamados ${getDate()}.txt`;
 
 // Palavras específicas que queremos contar
-const wordsToCount = ['A', 'V', 'I', 'AP', 'DHO', 'SESMT', 'SC', 'VA', 'EX', 'INF'];
+const wordsToCount = ['A', 'V', 'I', 'AP', 'DHO', 'SESMT', 'EC', 'VA', 'EX', 'INF'];
 
 
 
@@ -46,7 +46,7 @@ function displayResults_Estratificado(results) {
         <table>
             <tr>
                 <td id="td-ico">
-                    <img src="../imgs/icone_quantidade.png" id="icons-estatisticas">
+                    <img src="../imgs/icone_quantidade.png" id="icon-estatisticas">
                 </td>
                 <td>
                     ${Object.entries(results).map(([word, count]) => `${word}: ${count}`).join('<br>')}
@@ -89,7 +89,7 @@ function displayTotalCount(results) {
         <table>
             <tr>
                 <td id="td-ico">
-                    <img src="../imgs/icone_quantidade.png" id="icons-estatisticas">
+                    <img src="../imgs/icone_quantidade.png" id="icon-estatisticas">
                 </td>
                 <td>
                     ${totalCount}

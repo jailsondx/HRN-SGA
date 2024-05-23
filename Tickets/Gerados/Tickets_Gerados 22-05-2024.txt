@@ -1,0 +1,25 @@
+
+
+[22-05-2024 09-03-47]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: V-013
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket V-013 com sucesso!
+
+[22-05-2024 09-04-28]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-066
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket A-066 com sucesso!
+
+[22-05-2024 09-30-30]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: I-021
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket I-021 com sucesso!

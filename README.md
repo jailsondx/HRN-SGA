@@ -13,7 +13,7 @@ Mike42 ESC/POS
 Bootbox JS
 
 //Portas
-Apacha Porta 8084
+Apache Porta 80
 Mysql Porta 3306
 
 //Configuração no navegador da TV/Totem
