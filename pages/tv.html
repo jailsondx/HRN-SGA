@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -11,12 +12,14 @@
 
     <!-- CSS customizado -->
     <link rel="stylesheet" href="../css/tv.css">
+    <link rel="stylesheet" href="../css/geral.css">
 
     <!-- Ícone da página -->
     <link rel="icon" href="../imgs/logo.ico" type="image/x-icon">
 
     <title>TV - Chamada</title>
 </head>
+
 <body>
     <!-- Scripts JavaScript -->
     <script type="module" src="../js/relogio.js"></script>
@@ -33,11 +36,13 @@
             <div id="ticketChamado"><!-- Aqui será exibido o número do ticket --></div>
             <div id="guicheChamado">---<!-- Aqui será exibido o número do ticket --></div>
         </div>
-      
+
         <!-- Coluna direita -->
         <div class="right-column">
             <!-- Título -->
-            <div><h2>Tickets Atendidos</h2></div>
+            <div>
+                <h2><b>Tickets Atendidos</b></h2>
+            </div>
             <!-- Lista de tickets anteriores -->
             <div id="ticketsAnteriores"> <!-- Aqui será exibida a lista de tickets gerados --> </div>
         </div>
@@ -45,9 +50,21 @@
 
     <!-- Rodapé -->
     <div class="rodape">
-        <!-- Relógio -->
-        <img src="../imgs/Logo_E.png" class="logosHRN"><div id="clock"></div><img src="../imgs/Logo_D.png" class="logosHRN">
+        <div class="logosHRN-E">
+            <img src="../imgs/Logo_E.png" class="ico-logosHRN">
+        </div>
+
+        <div class="data-hora">
+            <span id="data"></span>
+            <span id="hora"></span>
+        </div>
+
+        <div class="logosHRN-D">
+            <img src="../imgs/Logo_D01.png" class="ico-logosHRN">
+            <img src="../imgs/Logo_D02.png" class="ico-logosHRN">
+        </div>
     </div>
 
 </body>
+
 </html>

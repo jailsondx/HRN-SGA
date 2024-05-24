@@ -1,0 +1,64 @@
+/* Importação de fontes */
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../font/poppins/Poppins-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../font/poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+
+.rodape {
+    font-family: Poppins-Regular, Arial, sans-serif;
+    /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
+    background-color: #f0f0f0;
+    display: flex;
+    /* Torna o container flexível */
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* Alinha os itens horizontalmente ao centro */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    margin-top: 1vh;
+    height: 12vh;
+    /* Altura do container */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.data-hora {
+    font-size: 3vw;
+    flex-wrap: nowrap;
+    text-align: center;
+    width: 50%;
+}
+
+#data {
+    width: 50%;
+    margin-right: 2vw;
+}
+
+#hora {
+    margin-left: 2vw;
+    width: 50%;
+}
+
+.logosHRN-E,
+.logosHRN-D {
+    display: flex;
+    /* Torna o container flexível */
+    justify-content: center;
+    /* Alinha os itens horizontalmente ao centro */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    width: 25%;
+    height: 4vw;
+}
+
+.ico-logosHRN {
+    height: 100%;
+}
+
+

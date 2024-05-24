@@ -14,6 +14,7 @@ function listaTicketsGerados() {
 // Chama a função para atualizar a lista de tickets gerados a cada 5 segundos
 setInterval(listaTicketsGerados, 5000); // 5000 milissegundos = 5 segundos
 
+
 // Chama a função para atualizar a lista de tickets gerados imediatamente ao carregar a página
 $(document).ready(function() {
     listaTicketsGerados();

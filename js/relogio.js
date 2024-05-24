@@ -7,15 +7,19 @@ function displayTime() {
     var month = date.getMonth() + 1; // Os meses em JavaScript são baseados em zero, então adicionamos 1 para obter o mês correto
     var year = date.getFullYear();
     
-    // Formata os minutos, segundos, dia e mês para terem sempre dois dígitos
+    // Formata as horas, minutos, segundos, dia e mês para terem sempre dois dígitos
+    hours = hours < 10 ? '0' + hours : hours;
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
     day = day < 10 ? '0' + day : day;
     month = month < 10 ? '0' + month : month;
     
-    var timeString = day + '/' + month + '/' + year + ' ' + hours + ':' + minutes + ':' + seconds;
-    document.getElementById('clock').innerHTML = timeString;
+    var horaString = hours + ':' + minutes + ':' + seconds;
+    var dataString = day + '/' + month + '/' + year;
+    document.getElementById('data').innerHTML = dataString;
+    document.getElementById('hora').innerHTML = horaString;
 }
+
 
 // Chama a função displayTime a cada segundo para atualizar o relógio
 setInterval(displayTime, 1000);

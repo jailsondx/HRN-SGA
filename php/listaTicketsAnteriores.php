@@ -34,7 +34,7 @@ function obterTicketsGerados($conn) {
        // Fechar a lista UL
        $html .= "</table>";
    } else {
-       $html = "Nenhum resultado encontrado.";
+       $html = "";
    }
 
    // Fechar a conexão com o banco de dados

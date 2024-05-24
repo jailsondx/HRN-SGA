@@ -4,133 +4,163 @@
     text-align: center;  Alinha o texto horizontalmente 
 */
 
-@media screen and (max-width: 768px){/*Celulares*/
-    .rodape{
-    font-size: 1.7rem;
-    }
-    .item1, .item1-2{
-        font-size: 1.3rem;
-    }
+
+
+/* Responsividade para diferentes dispositivos */
+
+
+/* Celulares ------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+  .item1,
+  .item1-2 {
+    font-size: 1.3rem;
+  }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1023px){/*Tablets*/
-    .rodape{
+
+
+/* Tablets ------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+  .item1,
+  .item1-2 {
     font-size: 2rem;
-    }
-    .item1, .item1-2{
-        font-size: 2rem;
-    }
-
+  }
 }
 
-@media screen and (min-width: 1024px){/*Computadores*/
-    .rodape{
-    font-size: 3rem;
-    }
-    .item1, .item1-2{
-        font-size: 3rem;
-    }
+
+
+/* Computadores ------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+
+  .item1,
+  .item1-2 {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+/* Computadores com altura máxima de 500px ------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-height: 500px) {}
+
+
+
+
+
+/* Importação de fontes */
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../font/poppins/Poppins-Regular.ttf') format('truetype');
+
 }
 
 @font-face {
-    font-family: Poppins-Regular;
-    src: url('../font/poppins/Poppins-Regular.ttf') format('truetype');
-  
-  }
-  
-  @font-face {
-    font-family: Poppins-Bold;
-    src: url('../font/poppins/Poppins-Bold.ttf') format('truetype');
-  }
-
-  @keyframes moveBG-BTN {
-    0% {
-    
-      background-position: 0% 0%;
-    }
-    50% {
-      background-position: 100% 100%;
-    }
-    100% {
-        
-      background-position: 0% 0%;
-    }
-  }
-
-  body {
-    font-family: Poppins-Bold, Arial, sans-serif; /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Cor de fundo sem opacidade */
-    position: relative; /* Define a posição relativa para que os elementos posicionados absolutamente fiquem relativos a este */
-
-    /*Desabilitar a Seleção de Texto*/
-    -webkit-user-select: none;  /* Safari */
-    -moz-user-select: none;     /* Firefox */
-    -ms-user-select: none;      /* Internet Explorer/Edge */
-    user-select: none;          /* Outros navegadores */
+  font-family: Poppins-Bold;
+  src: url('../font/poppins/Poppins-Bold.ttf') format('truetype');
 }
 
-.background-image {
-    background-image: url("../imgs/hrn.jpg");
-    background-position: center; /* Centraliza a imagem */
-    background-size: cover; /* Redimensiona a imagem de fundo para cobrir todo o contêiner */
-    position: relative; /* Importante: Defina a posição relativa para que o pseudo-elemento fique posicionado em relação a este */
-}
 
-.background-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(233, 233, 233, 0.7); /* Cor semi-transparente*/
-}
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 85vh; /* 100% da altura da viewport */
-    text-align: center /*Alinha os textos ao centro horizontalmente*/;
-    justify-content: center; /* Alinha os itens horizontalmente ao centro */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
 
-    /*Opacidade*/
-    position: relative; /* Certifique-se de que o conteúdo dentro da div esteja posicionado relativamente à div pai */
-    z-index: 1; /* Garante que o conteúdo fique acima da camada semi-transparente */
-}
 
-.break {
-    flex-basis: 100%;
-    height: 0;
+/*Animações*/
+@keyframes moveBG-BTN {
+  0% {
+
+    background-position: 0% 0%;
   }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+
+    background-position: 0% 0%;
+  }
+}
+
+
+
+
+/* Estilos gerais */
+body {
+  background-image: url("../imgs/hrn-20.png");
+  background-color: #f0f0f0;
+  /* Cor de fundo sem opacidade */
+  background-position: center;
+  /* Centraliza a imagem */
+  background-size: cover;
+  /* Redimensiona a imagem de fundo para cobrir todo o contêiner */
+  position: relative;
+  /* Define a posição relativa para que os elementos posicionados absolutamente fiquem relativos a este */
+
+  /*Desabilitar a Seleção de Texto*/
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Outros navegadores */
+}
+
+.container{
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  text-align: center;  
+}
+.botoes {
+  font-family: Poppins-Bold, Arial, sans-serif;
+  /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
+  display: flex;
+  flex-wrap: wrap;
+  height: 85vh;
+  /* 100% da altura da viewport */
+  text-align: center
+    /*Alinha os textos ao centro horizontalmente*/
+  ;
+  justify-content: center;
+  /* Alinha os itens horizontalmente ao centro */
+  align-items: center;
+  /* Alinha os itens verticalmente ao centro */
+}
 
 .item1 {
-    width: 91% !important;    
+  width: 91% !important;
 }
 
-.item1, .item1-2 {
-    display: flex;
-    width: calc(90% / 2); /* Cada item ocupa metade da largura da tela */
-    height: 28vh; /* Cada item ocupa 1/3 da altura da tela */
-    text-align: center /*Alinha os textos ao centro horizontalmente*/;
-    justify-content: center; /* Alinha os itens horizontalmente ao centro */
-    margin-right: 1%;
-    align-items: center; /* Alinha os itens verticalmente ao centro */
+.item1,
+.item1-2 {
+  display: flex;
+  width: calc(90% / 2);
+  /* Cada item ocupa metade da largura da tela */
+  height: 28vh;
+  /* Cada item ocupa 1/3 da altura da tela */
+  text-align: center;
+    /*Alinha os textos ao centro horizontalmente*/
+  justify-content: center;
+  /* Alinha os itens horizontalmente ao centro */
+  margin-right: 1%;
+  align-items: center;
+  /* Alinha os itens verticalmente ao centro */
 }
 
-  .tipoTicket:not(#O){
-    height: 90%;
-    width: 100%;
-    text-align: center;
-    background-image: linear-gradient(to bottom right, #008e88,#009993,#0d426a);
-    border-radius: 2rem;
-    color: white;
-  }
-  
+.tipoTicket:not(#O) {
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #008e88, #009993, #0d426a);
+  border-radius: 2rem;
+  color: white;
+}
 
-  /*
+
+/*
 .tipoTicket:hover{
     background-image: linear-gradient(to bottom right, #FFC300,#FFC300,#FFC300);
     color: black;
@@ -139,35 +169,34 @@
 */
 
 .tipoTicket:active {
-    transform: scale(0.80);
-    background-image: linear-gradient(to bottom right, #FFC300,#FFC300,#FFC300);
-    color: black;
+  transform: scale(0.80);
+  background-image: linear-gradient(to bottom right, #FFC300, #FFC300, #FFC300);
+  color: black;
 }
 
 #O {
-    height: 90%;
-    width: 100%;
-    text-align: center;
-    background-image: linear-gradient(to right, #074e39,#009993,#0d426a);
-    border-radius: 2rem;
-    color: white;
-    background-size: 200% 200%;
-    animation: moveBG-BTN 5s ease infinite;
-
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(to right, #074e39, #009993, #0d426a);
+  border-radius: 2rem;
+  color: white;
+  background-size: 200% 200%;
+  animation: moveBG-BTN 5s ease infinite;
 }
 
-.rodape {
-    font-family: Poppins-Regular, Arial, sans-serif; /* Use MyFont como a fonte padrão, mas fornecer fallbacks */
-    background-color: #f0f0f0;
-    display: flex; /* Torna o container flexível */
-    flex-wrap: wrap;
-    justify-content: center; /* Alinha os itens horizontalmente ao centro */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    margin-top: 1vh;
-    height: 12vh; /* Altura do container */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+.ico-seta-E,
+.ico-seta-D {
+  width: 10vw;
+  height: 20vh;
+  margin: 60px black;
+}
 
-     /*Opacidade*/
-     position: relative; /* Certifique-se de que o conteúdo dentro da div esteja posicionado relativamente à div pai */
-     z-index: 1; /* Garante que o conteúdo fique acima da camada semi-transparente */
+.ico-seta-E {
+  margin-left: -3vw;
+  transform: rotate(180deg);
+}
+
+.ico-seta-D {
+  margin-left: -2vw;
 }

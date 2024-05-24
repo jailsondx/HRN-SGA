@@ -4,3 +4,6 @@ Verde claro: #16b1a1;
 Cinza Claro (Background, Body): #e1dbdb
 Cinza Escuro (Coluna): #cccccc
 Branco não absoluto: #f0f0f0
+
+
+ background-image: linear-gradient(to right, #074e39, #009993, #0d426a);

@@ -6,3 +6,10 @@ Hostname: NTI-5
 IP: ::1
 Ticket: INF-001
 Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[23-05-2024 15-02-35]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: DHO-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!

@@ -1,0 +1,111 @@
+
+
+[24-05-2024 08-32-56]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 08-32-56]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: V-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 08-32-58]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: EC-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 08-32-59]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: SESMT-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 08-33-31]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: VA-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 08-33-32]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: INF-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 08-37-48]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: A-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 15-21-22]
+Origem do Evento
+Hostname: NTI-5
+IP: ::1
+Ticket: I-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 15-42-22]
+Origem do Evento
+Hostname: NTI-5
+IP: 10.3.2.211
+Ticket: EC-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 15-42-28]
+Origem do Evento
+Hostname: NTI-5
+IP: 10.3.2.211
+Ticket: VA-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 15-42-32]
+Origem do Evento
+Hostname: NTI-5
+IP: 10.3.2.211
+Ticket: EC-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 15-42-33]
+Origem do Evento
+Hostname: NTI-5
+IP: 10.3.2.211
+Ticket: A-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[24-05-2024 15-42-39]
+Origem do Evento
+Hostname: NTI-5
+IP: 10.3.2.211
+Ticket: VA-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket VA-001 com sucesso!
+
+[24-05-2024 15-42-43]
+Origem do Evento
+Hostname: NTI-5
+IP: 10.3.2.211
+Ticket: I-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+Impressão do ticket I-002 com sucesso!
+Impressão do ticket VA-002 com sucesso!
+Impressão do ticket EC-002 com sucesso!
+Impressão do ticket A-002 com sucesso!
+
+[24-05-2024 15-44-16]
+Origem do Evento
+Hostname: NTI-5
+IP: 10.3.2.211
+Ticket: INF-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
