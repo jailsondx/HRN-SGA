@@ -100,7 +100,7 @@
     <div class="right-column">
       <div class="titulo-right-column"><b>Próximos Tickets</b></div>
       <div id="tickets"> <!-- Aqui será exibida a lista de tickets gerados --> </div>
-      <div class="version">v1.1</div>
+      <div class="version">v1.2</div>
     </div>
 
   </div><!--FIM DIV CONTAINER-->
