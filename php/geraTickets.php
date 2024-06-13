@@ -110,7 +110,7 @@ function geraTicket($conn, $tipo){
 
     // Fecha a conexão com o banco de dados
     $conn->close();
-    imprimirTermica($tipo, $numero);
+    //imprimirTermica($tipo, $numero);
     //echo json_encode(imprimirTermica($tipo, $numero));
     //visualizar($tipo, $numero);
     //header("Location: ../pages/cliente.html");

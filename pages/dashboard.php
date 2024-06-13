@@ -35,6 +35,7 @@
   <script type="module" src="../js/chamaTickets.js"></script>
   <script type="module" src="../js/contadorAtendimentos.js"></script>
   <script type="module" src="../js/defineGuiche.js"></script>
+ 
 
   <!-- <script type="module" src="../js/apiTempo.js"></script> -->
 
@@ -44,12 +45,12 @@
       <div class="quadro-infor-tickets">
         <h1><b>Ticket em Atendimento</b></h1>
         <!-- Local onde o valor retornado do banco de dados será exibido -->
-        <div id="ticketInfo"></div>
+        <div id="ticketInfo">---</div>
 
         <!-- Botão para chamar Tickets -->
         <div class="botoesSup">
           <button id='btnChamaTicketEmOrdem' type="button" class="btn btn-warning">Chamar Próximo</button>
-          <button id='btnRepeteUltimo' type="button" class="btn btn-secondary">Chamar Novamente o Ultimo</button>
+          <button id='btnChamaTicketRepetido' type="button" class="btn btn-secondary">Chamar Novamente o Ultimo</button>
         </div>
         <div class="botoesInf">
           <button id='btnChamaTicketAcompanhante' type="button" class="btn btn-success">Chamar Acompanhante</button>
@@ -100,11 +101,10 @@
     <div class="right-column">
       <div class="titulo-right-column"><b>Próximos Tickets</b></div>
       <div id="tickets"> <!-- Aqui será exibida a lista de tickets gerados --> </div>
-      <div class="version">v1.2</div>
+      <div class="version">v2.0</div>
     </div>
 
   </div><!--FIM DIV CONTAINER-->
-
 
 </body>
 

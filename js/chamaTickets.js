@@ -1,14 +1,23 @@
+import { iniciarWebSocket, enviarMensagemWebSocket } from '../Components/WebSocketConnection.js'; // Importa a função para iniciar a conexão WebSocket
+import { executarBipe, falarTexto } from '../js/SomChamada.js'; // Importa as funções de som
+
+// Inicia a conexão WebSocket com o identificador 'Atendimento_Principal'
+iniciarWebSocket('ws://localhost:3001', 'Atendimento_Principal');
+
 document.addEventListener("DOMContentLoaded", function () {
+    //Variaveis Globais
+    var ticketChamado;
+    var guicheChamado;
+    var chamadaCompleta;
+
+    //Inicio da Função principal desse arquivo
     function chamarTicket(tipo, guiche) {
-
         if ((guiche === null) || (guiche === '---') || (guiche === 'null')) {
-
             // Exibe um alerta com a mensagem definida e o título 'Guiche'
             bootbox.alert({
                 title: 'AVISO',
                 message: 'O Guichê não pode ser vazio, favor escolher um guichê'
             });
-
         } else {
             // Faz uma chamada AJAX para o arquivo PHP
             $.ajax({
@@ -18,16 +27,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 success: function (response) {
                     // Trata a resposta do servidor
                     $('#ticketInfo').html(response);
+                    ticketChamado = response;
+                    guicheChamado = recebeGuiche();
 
-                    // Define o valor de selectedGuiche no elemento com id guicheChamado
-                    //document.getElementById('guicheChamado').innerText = selectedGuiche;
-
+                    // Envia a mensagem via WebSocket para server.js
+                    //enviarMensagemWebSocket(response);
+                    
                     var data = {
                         'Arquivo': 'chamaTickets.js',
                         'Ticket chamado caixa/recepção': response,
                         'Guiché': recebeGuiche()
                     };
                     console.table(data);
+                    
+                    chamadaCompleta = ticketChamado + ',' + guicheChamado;
+                    enviarMensagemWebSocket(chamadaCompleta, 'Atendimento_Principal');
                 },
                 error: function (xhr, status, error) {
                     // Trata erros de requisição AJAX
@@ -36,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
+
     $('#btnChamaTicketAcompanhante').click(function () {
         chamarTicket('A', recebeGuiche());
     });
@@ -81,8 +96,8 @@ document.addEventListener("DOMContentLoaded", function () {
         chamarTicket('btnChamaTicketEmOrdem', recebeGuiche());
     });
 
-    $('#btnRepeteUltimo').click(function () {
-        chamarTicket('btnRepeteUltimo', recebeGuiche());
+    $('#btnChamaTicketRepetido').click(function () {
+        enviarMensagemWebSocket(chamadaCompleta, 'Atendimento_Principal');
     });
 
 });
@@ -98,5 +113,7 @@ function recebeGuiche() {
     }
     return selectedGuiche;
 }
+
+
 
 

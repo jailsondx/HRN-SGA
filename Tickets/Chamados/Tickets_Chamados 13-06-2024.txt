@@ -1,0 +1,769 @@
+
+
+[13-06-2024 14-26-05]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-001
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-26-17]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-001
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-26-21]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-001
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-29-06]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-002
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-36-40]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-002
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-36-49]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-001
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-37-03]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-002
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-37-08]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-003
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-38-34]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: VA-001
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-38-59]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-002
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-53-09]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: EC-001
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-55-43]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: INF-001
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 14-58-56]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: SESMT-001
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-00-12]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: DHO-001
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-00-36]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-003
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-01-56]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-004
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-02-27]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-005
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-03-31]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-004
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-04-47]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-003
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-04-52]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-003
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-05-58]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-005
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-06-25]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-004
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-07-15]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-004
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-07-22]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-006
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-07-35]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-005
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-07-38]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-005
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-08-22]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-006
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-09-14]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-007
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-09-30]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-008
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-11-42]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-009
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-12-48]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-010
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-15-29]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-011
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-16-16]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-012
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-17-02]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-006
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-17-11]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-007
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-31-27]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-007
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-52-01]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-006
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-52-15]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-007
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-53-18]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-008
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-53-33]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-009
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-54-48]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-010
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-54-51]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-008
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-58-30]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-009
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-59-27]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-010
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 15-59-54]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-011
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-00-38]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-012
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-00-47]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-008
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-01-09]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-009
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-02-40]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-010
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-11-49]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-011
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-14-07]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-012
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-16-04]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-013
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-20-41]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-014
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-21-41]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-015
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-21-52]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-013
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-22-16]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-014
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-22-25]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-015
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-27-55]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-016
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-28-32]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-017
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-29-08]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-018
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-31-09]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-019
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-31-19]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-020
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-32-34]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-013
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-33-00]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-014
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-34-50]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-015
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-34-59]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-016
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-37-58]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-011
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-38-15]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-012
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-39-50]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-013
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-42-30]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-014
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-42-34]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-015
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-42-39]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-016
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-42-45]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-016
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-43-12]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-017
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-43-23]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-018
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-44-08]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-019
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-47-46]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-017
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-53-21]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-018
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-53-33]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-019
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-53-55]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-020
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-58-45]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-021
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 16-59-17]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-022
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-00-40]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-023
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-01-24]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-024
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-01-33]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-020
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-03-19]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-021
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-03-40]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-022
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-04-57]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-017
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-06-13]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-018
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-08-36]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-019
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-09-24]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-023
+Guiche: Guiche 02
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-12-46]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-021
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-14-18]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-022
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 17-15-53]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-023
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 19-08-58]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-024
+Guiche: Guiche 01
+Operação: Chamado com sucesso!
+
+[13-06-2024 19-09-38]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-025
+Guiche: Guiche 01
+Operação: Chamado com sucesso!

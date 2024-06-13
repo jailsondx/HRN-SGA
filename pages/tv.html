@@ -23,9 +23,24 @@
 <body>
     <!-- Scripts JavaScript -->
     <script type="module" src="../js/relogio.js"></script>
-    <script type="module" src="../js/updateTelaChamado.js"></script>
-    <script type="module" src="../js/listaTicketsAnteriores.js"></script>
+    <script type="module" src="../Components/TvUpdate.js"></script>
+    <script src="../js/verificaLocalStorage.js"></script>
 
+<!-- Módulo de seleção do local de atendimento dentro de um formulário -->
+<div id="selectLocal">
+<form id="formLocalAtendimento">
+      <label for="localAtendimento" id="title_form">Escolha o Local de Atendimento:</label>
+      <select id="localAtendimento">
+        <option value="tv_principal">Rec. Principal</option>
+        <option value="tv_emergencia">Rec. Emergencia</option>
+        <option value="Rec. Ambulatorio">Rec. Ambulatorio</option>
+        <!-- Outras opções conforme necessário -->
+      </select>
+    <button type="submit" class="btn btn-dark">Definir</button>
+</form>
+</div>
+
+<div id="Conteudo">
     <!-- Conteúdo da página -->
     <div class="container">
         <!-- Coluna esquerda -->
@@ -65,6 +80,8 @@
         </div>
     </div>
 
+
+</div>
 </body>
 
 </html>

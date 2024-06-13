@@ -1,0 +1,771 @@
+
+
+[13-06-2024 13-17-49]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 13-17-50]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 13-17-50]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 13-17-51]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 13-17-52]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-15]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-16]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-17]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-003
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-19]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: VA-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-20]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-23]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: EC-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-25]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: INF-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-27]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: SESMT-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-29]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: DHO-001
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-30]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-004
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-36-32]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-003
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-25]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-003
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-26]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-003
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-27]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-005
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-27]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-004
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-28]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-004
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-29]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-004
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-29]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-006
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-30]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-005
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-30]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-005
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-31]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-006
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-31]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-007
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-31]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-008
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-31]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-009
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-32]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-010
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-32]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-011
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-32]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-012
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-33]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-006
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-33]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-007
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-34]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-007
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 14-59-34]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-005
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-49]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-006
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-49]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-007
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-50]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-008
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-50]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-009
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-50]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-010
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-51]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-008
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-51]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-009
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-51]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-010
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-51]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-011
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-51]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-012
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-52]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-008
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-52]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-009
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-52]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-010
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-53]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-011
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-53]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-012
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-53]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-013
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-53]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-014
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-53]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-015
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-54]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-013
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-54]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-014
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-54]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-015
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-54]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-016
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-55]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-017
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-55]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-018
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-55]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-019
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-55]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-020
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-56]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-013
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-56]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-014
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-56]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-015
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-56]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-016
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-57]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-011
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-57]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-012
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 15-51-57]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-013
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-39]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-014
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-40]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-015
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-40]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-016
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-41]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-016
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-41]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-017
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-41]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-018
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-41]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-019
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-42]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-017
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-42]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-018
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-42]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-019
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-42]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-020
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-43]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-021
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-43]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-022
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-44]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-023
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-44]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-024
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-45]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-020
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-45]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-021
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-45]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-022
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-46]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-017
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-46]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-018
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-29-46]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-019
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 16-30-31]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-023
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-08]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-021
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-08]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-022
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-08]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-023
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-08]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-024
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-08]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-025
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-09]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-026
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-09]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: V-027
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-10]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: VA-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-11]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: VA-003
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-12]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: VA-004
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-13]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: VA-005
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-14]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: VA-006
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-17]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: SESMT-002
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-18]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-024
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-19]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: AP-025
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-20]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: I-025
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-20]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-020
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-21]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-021
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
+
+[13-06-2024 17-12-21]
+Origem do Evento
+Hostname: JAILSON-DELL_G3
+IP: ::1
+Ticket: A-022
+Operação: Ticket Gerado, Novo registro inserido com sucesso!
